@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "friends-header.css";
+@import "friends-list.css";
+@import "nav.css";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration-style: none;
+}
+body {
+  background-color: lavender;
+}
+.cacao-screen {
+  position: relative;
+  width: 395px;
+  height: 690px;
+  color: #2c2c2c;
+  background-color: white;
+}

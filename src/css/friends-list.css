@@ -1,0 +1,103 @@
+.friends-list {
+  height: calc(100% - 80px);
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  overflow: scroll;
+  padding: 0px 17px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.friends-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.friends-column-contents {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.friends-list .my-profile {
+  padding: 15px 0px;
+}
+.friends-column-contents .friend-column {
+  display: flex;
+  align-items: center;
+}
+.friends-list .friends-list__name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 14px;
+}
+
+.friends-list .friends-list__my-name {
+  font-weight: 800;
+}
+.friends-column-title {
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  object-fit: cover;
+  border: 1px solid #e6e6e6;
+}
+.frieds-list__my-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.section-friends .friends-list__name {
+  display: block;
+}
+.section-friends .friend-status {
+  opacity: 0.3;
+  font-size: 10px;
+  font-weight: 600;
+}
+.section-friends .friend-status {
+  margin-left: 14px;
+}
+.section-friends .friends-column-contents {
+  justify-content: space-between;
+}
+.section-friends .friend-music {
+  border: 1px solid #00eb1f;
+  border-radius: 15px;
+  padding: 7px;
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 160px;
+  max-height: 90px;
+  display: flex;
+}
+.music-ellipses {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  /*word-break: break-all;*/
+  text-overflow: ellipsis;
+  max-width: 140px;
+
+  text-transform: capitalize;
+}
+.friend-music i {
+  color: #00eb1f;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
