@@ -1,0 +1,50 @@
+.sharp-body {
+  position: absolute;
+
+  border: 1px solid red;
+}
+.sharp-header {
+  width: 100%;
+  height: 55px;
+  font-size: 22px;
+  font-weight: 700px;
+  padding: 15px;
+  color: rgb(107, 107, 107);
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+  word-break: keep-all;
+
+  margin-right: 15px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.sharp-header::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+/*  doesnt work. why?
+.sharp-header:before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a8";
+  font-weight: 900;
+}*/
+
+.sharp-header:after {
+  content: " < slide-icon";
+}
+.sharp-header:before {
+  content: " slide-icon > ";
+}
+.sharp-header .header-column {
+  display: inline-block;
+  margin-right: 14px;
+  list-style: none;
+}
+.sharp-header .header-column:nth-child(2) {
+  color: #2c2c2c;
+  border-bottom: 2px solid #2c2c2c;
+}
+.header-column:nth-child(2)::before {
+  content: "\0023";
+}

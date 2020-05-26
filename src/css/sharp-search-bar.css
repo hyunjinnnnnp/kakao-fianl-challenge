@@ -1,0 +1,95 @@
+.sharp-screen .search-bar {
+  height: 165px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+
+  box-sizing: border-box;
+  -webkit-box-shadow: -9px -8px 27px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px -8px 27px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: -9px -8px 27px -21px rgba(0, 0, 0, 0.75);
+
+  padding: 10px 18px;
+}
+.sharp-screen .search-bar input {
+  border: 2px solid #fae100;
+  border-radius: 10px;
+  width: 330px;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+}
+.sharp-screen .search-bar:hover {
+  height: 600px;
+  border: 1px solid salmon;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sharp-screen .clicked-keyword {
+  display: none;
+}
+.sharp-screen .search-bar:hover .search__keywords {
+  display: none;
+}
+.sharp-screen .search-bar:hover .clicked-keyword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+/*
+.sharp-screen .search-bar:hover .sharp-main {
+  height: 465px;
+  display: flex;
+  overflow: scroll;
+}*/
+.clicked-keyword i:nth-child(1) {
+  margin: 5px;
+  background-color: rgb(192, 192, 192);
+  padding: 4px;
+
+  border-radius: 50%;
+  color: white;
+}
+
+.clicked-keyword i:nth-child(2) {
+  margin-left: 5px;
+}
+.search-bar__clicked {
+  margin-top: 12px;
+}
+/*
+.search-bar::placeholder input {
+  content: "\0023";
+  content: "#";
+}
+*/
+
+.search-bar .search-recommend {
+  font-size: 12px;
+  opacity: 0.6;
+  background-color: rgb(230, 230, 230);
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+
+  display: inline-block;
+}
+
+.sharp-screen .search-bar:hover {
+  -webkit-box-shadow: 2px -101px 87px 101px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 2px -101px 87px 101px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px -101px 87px 101px rgba(0, 0, 0, 0.65);
+}

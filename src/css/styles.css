@@ -4,19 +4,62 @@
 @import "friends-header.css";
 @import "friends-list.css";
 @import "nav.css";
+@import "chattings.css";
+@import "sharp-header.css";
+@import "sharp-main.css";
+@import "more.css";
+@import "sharp-search-bar.css";
+@import "chat.css";
 
 * {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   text-decoration-style: none;
+
+  color: rgb(51, 51, 51);
 }
-body {
-  background-color: lavender;
+a {
+  text-decoration: none;
+  color: inherit;
 }
+
 .cacao-screen {
   position: relative;
+  top: 0;
+  left: 0;
   width: 395px;
   height: 690px;
   color: #2c2c2c;
   background-color: white;
+  border: 1px solid salmon;
+}
+.status-bar {
+  z-index: 6000;
+}
+
+/*
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation: loader 5s forwards;
+}
+@keyframes loader {
+  0% {
+    background-image: url("src/img/loading.jpeg");
+    z-index: 9999;
+  }
+  50% {
+    z-index: 5000;
+  }
+  100% {
+    display: none;
+  }
+}
+*/
+.nav-icon {
+  color: #2c2c2c;
 }

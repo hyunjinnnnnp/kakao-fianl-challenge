@@ -7,7 +7,6 @@
   box-sizing: border-box;
   display: block;
   overflow: scroll;
-  padding: 0px 17px;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -19,9 +18,10 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 0 17px;
 }
 .friends-list .my-profile {
-  padding: 15px 0px;
+  padding: 15px 17px;
 }
 .friends-column-contents .friend-column {
   display: flex;
@@ -30,7 +30,7 @@
 .friends-list .friends-list__name {
   font-size: 14px;
   font-weight: 600;
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .friends-list .friends-list__my-name {
@@ -42,8 +42,11 @@
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding: 10px 17px 0px 17px;
   border-top: 1px solid #e6e6e6;
+}
+.friends-column-title i:hover {
+  cursor: pointer;
 }
 .avatar {
   width: 40px;
@@ -79,6 +82,7 @@
   font-size: 12px;
   font-weight: 600;
   max-width: 160px;
+  min-width: 50px;
   max-height: 90px;
   display: flex;
 }
@@ -97,7 +101,9 @@
   margin-left: 5px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.friends-column-contents:hover {
+  background-color: rgb(243, 243, 243);
+}
+.my-profile:hover {
+  background-color: white;
 }

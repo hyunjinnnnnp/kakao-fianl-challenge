@@ -1,0 +1,63 @@
+.chattings-list {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100%-80px);
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.chattings-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.chattings-list .chattings__chat {
+  padding: 13px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+  padding: 0px 17px;
+}
+.chattings__chat:hover {
+  background-color: rgb(243, 243, 243);
+}
+.chattings__chat {
+  height: 80px;
+}
+
+.chattings-list .chats-avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 13px;
+}
+
+.chattings-list .chats-name {
+  margin-right: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+.chattings-list .chats-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.chattings-list .chats-msg,
+.chattings-list .chats-timestamp {
+  color: rgb(90, 90, 90);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chattings__chat .new-msg {
+  background-color: rgb(219, 96, 65);
+  padding: 3px;
+  color: white;
+  font-weight: 600;
+  border-radius: 100%;
+}

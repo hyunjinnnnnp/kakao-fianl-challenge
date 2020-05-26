@@ -1,0 +1,209 @@
+.more-header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f8f8f8;
+  position: absolute;
+}
+.more-header-icon {
+  display: inline-block;
+  margin-left: 20px;
+}
+.more-main {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: 555px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  box-sizing: border-box;
+}
+.more-main::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.cacao-pay-profile {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.cacao-pay-profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+.cacao-pay-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.cacao-pay-email {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.4;
+  font-weight: 600;
+}
+.cacao-pay-profile .profile-column {
+  display: flex;
+}
+.cacao-pay-profile .profile-column:nth-child(2) {
+  display: block;
+}
+.cacao-pay-btns button {
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 55px;
+  height: 35px;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+
+  border-style: none;
+  border: 1px solid rgb(231, 231, 231);
+}
+.cacao-pay-btns .btn-img {
+  text-indent: 5px;
+  float: left;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.cacao-pay-banking {
+  height: 50px;
+  margin: 15px;
+  background-color: #f3f3f3;
+  padding-left: 10px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banking-column {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 700;
+}
+.banking-column span:last-child:before,
+.banking-column span:nth-child(2):before {
+  content: "|";
+  font-weight: 500;
+  letter-spacing: 6px;
+  opacity: 0.5;
+}
+
+.cacao-pay-banking .cacao-pay-img2 {
+  width: 40px;
+  height: 20px;
+  object-fit: cover;
+
+  float: left;
+}
+.cacao-pay-banking button {
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 80px;
+  height: 35px;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+
+  border-style: none;
+  border: 1px solid rgb(231, 231, 231);
+}
+
+.main__cacao-pay .icons-list {
+  height: 250px;
+  flex-wrap: wrap;
+  /*display: flex;*/
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+.main__cacao-pay .icons-list span {
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+}
+.main__cacao-pay .icons-list i {
+  font-size: 30px;
+  font-weight: 100;
+}
+.more-main .more__icon {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 10px;
+
+  cursor: pointer;
+}
+/* why doesnt it work?
+.icons-list .icon-yellow i {
+  color: unset;
+  color: #ffd201;
+  border: 1px solid #e5b032;
+}
+
+.icons-list .more__icon:nth-child(9) {
+  display: inline;
+  color: unset;
+  color: #ffd201;
+  border: 1px solid #e5b032;
+
+}
+*/
+.cacao-account {
+  height: 55px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+.cacao-account i {
+  margin-right: 7px;
+}
+.cacao-account .make {
+  opacity: 0.8;
+}
+
+.commercial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.commercial-img {
+  width: 360px;
+  height: 140;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.commercial input {
+  display: inline-block;
+}
