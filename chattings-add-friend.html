@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/css/styles.css" rel="stylesheet" />
-    <title>CaCao | Chattings</title>
+    <title>CaCao | Nomad Challenge</title>
 
     <link
       rel="stylesheet"
@@ -32,20 +32,28 @@
           </div>
         </div>
 
-        <header class="friends-header">
-          <span>채팅</span>
-          <ul class="friends-header-column">
-            <li class="friends-header-icon">
-              <a href="chattings-add-friend.html"> <i class="xi-search"></i></a>
+        <div class="add-friends-screen"></div>
+        <header class="add-friends-header">
+          <div class="header-column">
+            <a href="chattings.html"><i class="xi-close"></i></a>
+            <span class="add-friends">친구추가</span>
+          </div>
+          <ul class="icon-list">
+            <li class="add-friends-icon">
+              <i class="xi-qr-code"></i>
+              <span>QR코드</span>
             </li>
-            <li class="friends-header-icon">
-              <a href="new-chat.html"><i class="xi-user-plus-o"></i></a>
+            <li class="add-friends-icon">
+              <i class="xi-user-address"></i>
+              <span>연락처로 추가</span>
             </li>
-            <li class="friends-header-icon">
-              <a href="music.html"><i class="xi-music"></i></a>
+            <li class="add-friends-icon">
+              <i class="xi-fingerprint"></i>
+              <span>ID로 추가</span>
             </li>
-            <li class="friends-header-icon">
-              <a href="settings.html"><i class="xi-cog"></i></a>
+            <li class="add-friends-icon">
+              <i class="xi-user-plus-o"></i>
+              <span>추천친구</span>
             </li>
           </ul>
         </header>
@@ -112,16 +120,24 @@
         <nav class="nav-bar">
           <ul class="nav-icons">
             <li class="nav-icon">
-              <a href="index.html"><i class="xi-user"></i></a>
+              <a href="index.html" class="nav__list-link home-btn"
+                ><i class="xi-user"></i
+              ></a>
             </li>
             <li class="nav-icon">
-              <a href="chattings.html"><i class="xi-speech-o"></i></a>
+              <a href="chattings.html" class="nav__list-link chattings-btn"
+                ><i class="xi-speech-o"></i
+              ></a>
             </li>
             <li class="nav-icon">
-              <a href="sharp.html"><span>#</span></a>
+              <a href="sharp.html" class="nav__list-link sharp-btn"
+                ><span>#</span></a
+              >
             </li>
             <li class="nav-icon">
-              <a href="more.html"><i class="xi-ellipsis-h"></i></a>
+              <a href="more.html" class="nav__list-link more-btn"
+                ><i class="xi-ellipsis-h"></i
+              ></a>
             </li>
           </ul>
         </nav>

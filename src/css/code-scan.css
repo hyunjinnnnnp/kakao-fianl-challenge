@@ -1,0 +1,60 @@
+.code-scan__header {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.camera-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("src/img/lisa.png");
+  background-repeat: no-repeat;
+  border: 1px solid blue;
+}
+
+.code-scan__nav {
+  display: absolute;
+  bottom: 0;
+  left: 0;
+  height: 140px;
+  border: 1px solid rgb(187, 255, 0);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(156, 156, 156);
+  list-style: none;
+  padding-top: 25px;
+}
+
+.code-scan__list i {
+  font-size: 20px;
+}
+.code-scan__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.code-scan__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 25px;
+}
+.code-scan__header i {
+  cursor: pointer;
+}

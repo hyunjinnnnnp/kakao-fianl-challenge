@@ -1,0 +1,43 @@
+.music-alert {
+  position: absolute;
+  width: 295px;
+  height: 186px;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+
+  left: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  z-index: 234;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 30px;
+  z-index: 999;
+}
+.music-column button {
+  width: 100%;
+  height: 25px;
+  outline-style: none;
+  border-style: none;
+  background-color: white;
+  border-top: rgb(187, 187, 187);
+  font-size: 14px;
+  color: #42a5f5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.music-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(49, 49, 58, 0.884);
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}

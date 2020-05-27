@@ -14,6 +14,7 @@
   <body>
     <div class="cacao-screen">
       <div class="loading-screen">
+        <div class="settings-screen"></div>
         <div class="status-bar">
           <div class="status-bar-column-left">
             <i class="xi-signal-4"></i>
@@ -44,9 +45,7 @@
             <li class="friends-header-icon">
               <a href="music.html"><i class="xi-music"></i></a>
             </li>
-            <li class="friends-header-icon">
-              <a href="settings.html"><i class="xi-cog"></i></a>
-            </li>
+            <li class="friends-header-icon"><i class="xi-cog"></i></li>
           </ul>
         </header>
 
@@ -230,31 +229,20 @@
           </div>
         </main>
 
-        <nav class="nav-bar">
-          <ul class="nav-icons">
-            <li class="nav-icon">
-              <a href="index.html" class="nav__list-link home-btn"
-                ><i class="xi-user"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a href="chattings.html" class="nav__list-link chattings-btn"
-                ><i class="xi-speech-o"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a href="sharp.html" class="nav__list-link sharp-btn"
-                ><span>#</span></a
-              >
-            </li>
-            <li class="nav-icon">
-              <a href="more.html" class="nav__list-link more-btn"
-                ><i class="xi-ellipsis-h"></i
-              ></a>
-            </li>
+        <nav class="settings-nav">
+          <ul class="settings-column">
+            <li class="setting-list"><span>편집</span></li>
+            <li class="setting-list"><span>친구 관리</span></li>
+            <li class="setting-list"><span>전체 설정</span></li>
           </ul>
+          <button onclick="goBack()">취소</button>
         </nav>
       </div>
     </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>

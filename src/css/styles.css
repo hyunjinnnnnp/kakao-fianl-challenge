@@ -10,6 +10,12 @@
 @import "more.css";
 @import "sharp-search-bar.css";
 @import "chat.css";
+@import "add-friends.css";
+@import "music.css";
+@import "settings.css";
+@import "chattings-add-friend.css";
+@import "new-chat.css";
+@import "code-scan.css";
 
 * {
   font-family: "Open Sans", sans-serif;

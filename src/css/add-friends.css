@@ -1,0 +1,49 @@
+.add-friends-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: white;
+  opacity: 1;
+  height: 155px;
+  z-index: 999;
+}
+
+.add-friends-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(49, 49, 58, 0.884);
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.add-friends-header .header-column {
+  display: flex;
+  text-align: center;
+}
+.add-friends-header .header-column:first-child {
+  margin-left: 20px;
+}
+.add-friends-header .add-friends {
+  margin-left: 118px;
+}
+.add-friends-header .header-column:first-child {
+  font-weight: 700;
+  font-size: 16px;
+}
+.add-friends-header .icon-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+}
+.add-friends-header i {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

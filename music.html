@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-
+        <div class="music-screen"></div>
         <header class="friends-header">
           <span>친구</span>
           <ul class="friends-header-column">
@@ -41,14 +41,21 @@
             <li class="friends-header-icon">
               <a href="add-friends.html"><i class="xi-user-plus-o"></i></a>
             </li>
-            <li class="friends-header-icon">
-              <a href="music.html"><i class="xi-music"></i></a>
-            </li>
-            <li class="friends-header-icon">
-              <a href="settings.html"><i class="xi-cog"></i></a>
-            </li>
+            <li class="friends-header-icon"><i class="xi-music"></i></li>
+            <li class="friends-header-icon"><i class="xi-cog"></i></li>
           </ul>
         </header>
+
+        <div class="music-alert">
+          <p>
+            선택하신 곡은 카카오톡 플레이어에서 바로 재생할 수 있습니다. 지금
+            해당 곡을 톡에서 바로 감상 하시겠습니까?
+          </p>
+          <p>3G/LTE 환경에서는 데이터 요금이 발생할 수 있습니다.</p>
+          <div class="music-column">
+            <button onclick="goBack()">취소</button>
+          </div>
+        </div>
 
         <main class="friends-list">
           <div class="friends-column-contents my-profile">
@@ -256,5 +263,11 @@
         </nav>
       </div>
     </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
   </body>
 </html>
