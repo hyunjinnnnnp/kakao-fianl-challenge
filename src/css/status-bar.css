@@ -1,5 +1,6 @@
 .status-bar {
-  width: 100%;
+  position: fixed;
+  width: 395px;
   height: 20px;
   font-size: 12px;
   font-weight: 600;
@@ -7,8 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-
-  box-sizing: border-box;
+  background-color: white;
   z-index: 999;
 }
 .status-bar-column-right {

@@ -13,256 +13,254 @@
   </head>
   <body>
     <div class="cacao-screen">
-      <div class="loading-screen">
-        <div class="status-bar">
-          <div class="status-bar-column-left">
-            <i class="xi-signal-4"></i>
-            <span>kt</span>
-            <i class="xi-wifi"></i>
-          </div>
-          <div class="status-bar-column-right">
-            <span>오전 8:18</span>
-            <div class="status-bar-column">
-              <i class="xi-lock-rotation"></i>
-              <i class="xi-alarm"></i>
-              <span>100%</span>
-              <i class="xi-battery-o"></i>
-              <i class="xi-flash"></i>
-            </div>
+      <div class="status-bar">
+        <div class="status-bar-column-left">
+          <i class="xi-signal-4"></i>
+          <span>kt</span>
+          <i class="xi-wifi"></i>
+        </div>
+        <div class="status-bar-column-right">
+          <span>오전 8:18</span>
+          <div class="status-bar-column">
+            <i class="xi-lock-rotation"></i>
+            <i class="xi-alarm"></i>
+            <span>100%</span>
+            <i class="xi-battery-o"></i>
+            <i class="xi-flash"></i>
           </div>
         </div>
+      </div>
 
-        <div class="add-friends-screen"></div>
-        <header class="add-friends-header">
-          <div class="header-column">
-            <a href="index.html"><i class="xi-close"></i></a>
-            <span class="add-friends">친구추가</span>
+      <div class="add-friends-screen"></div>
+      <header class="add-friends-header">
+        <div class="header-column">
+          <a href="index.html"><i class="xi-close"></i></a>
+          <span class="add-friends">친구추가</span>
+        </div>
+        <ul class="icon-list">
+          <li class="add-friends-icon">
+            <i class="xi-qr-code"></i>
+            <span>QR코드</span>
+          </li>
+          <li class="add-friends-icon">
+            <i class="xi-user-address"></i>
+            <span>연락처로 추가</span>
+          </li>
+          <li class="add-friends-icon">
+            <i class="xi-fingerprint"></i>
+            <span>ID로 추가</span>
+          </li>
+          <li class="add-friends-icon">
+            <i class="xi-user-plus-o"></i>
+            <span>추천친구</span>
+          </li>
+        </ul>
+      </header>
+
+      <main class="friends-list">
+        <div class="friends-column-contents my-profile">
+          <img
+            src="src/img/my-avatar.png"
+            class="frieds-list__my-avatar avatar"
+          />
+          <span class="friends-list__name friends-list__my-name"
+            >호머 심슨</span
+          >
+        </div>
+        <div class="friends-list__section section-favorite">
+          <div class="friends-list__column">
+            <div class="friends-column-title">
+              <span>즐겨찾기</span>
+              <i class="xi-angle-up-min"></i>
+            </div>
+            <a href="chat.html">
+              <div class="friends-column-contents">
+                <img
+                  src="src/img/burns.png"
+                  class="frieds-list__avatar avatar"
+                />
+                <span class="friends-list__name">번즈</span>
+              </div>
+            </a>
           </div>
-          <ul class="icon-list">
-            <li class="add-friends-icon">
-              <i class="xi-qr-code"></i>
-              <span>QR코드</span>
-            </li>
-            <li class="add-friends-icon">
-              <i class="xi-user-address"></i>
-              <span>연락처로 추가</span>
-            </li>
-            <li class="add-friends-icon">
-              <i class="xi-fingerprint"></i>
-              <span>ID로 추가</span>
-            </li>
-            <li class="add-friends-icon">
-              <i class="xi-user-plus-o"></i>
-              <span>추천친구</span>
-            </li>
-          </ul>
-        </header>
+        </div>
+        <div class="friends-list__section section-channel">
+          <div class="friends-list__column">
+            <div class="friends-column-title">
+              <span>채널</span>
+              <i class="xi-angle-up-min"></i>
+            </div>
+          </div>
 
-        <main class="friends-list">
-          <div class="friends-column-contents my-profile">
+          <div class="friends-column-contents">
             <img
-              src="src/img/my-avatar.png"
-              class="frieds-list__my-avatar avatar"
+              src="src/img/sideshow.png"
+              class="friends-list__avatar avatar"
             />
-            <span class="friends-list__name friends-list__my-name"
-              >호머 심슨</span
-            >
+            <span class="friends-list__name">사이드쇼</span>
           </div>
-          <div class="friends-list__section section-favorite">
-            <div class="friends-list__column">
-              <div class="friends-column-title">
-                <span>즐겨찾기</span>
-                <i class="xi-angle-up-min"></i>
-              </div>
-              <a href="chat.html">
-                <div class="friends-column-contents">
-                  <img
-                    src="src/img/burns.png"
-                    class="frieds-list__avatar avatar"
-                  />
-                  <span class="friends-list__name">번즈</span>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="friends-list__section section-friends">
+          <div class="friends-column-title">
+            <span>친구 78</span>
+            <i class="xi-angle-up-min"></i>
           </div>
-          <div class="friends-list__section section-channel">
-            <div class="friends-list__column">
-              <div class="friends-column-title">
-                <span>채널</span>
-                <i class="xi-angle-up-min"></i>
-              </div>
-            </div>
 
-            <div class="friends-column-contents">
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
               <img
                 src="src/img/sideshow.png"
                 class="friends-list__avatar avatar"
               />
-              <span class="friends-list__name">사이드쇼</span>
-            </div>
-          </div>
-          <div class="friends-list__section section-friends">
-            <div class="friends-column-title">
-              <span>친구 78</span>
-              <i class="xi-angle-up-min"></i>
-            </div>
-
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-            </div>
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-
-              <div class="friend-music">
-                <a href="#" class="music-ellipses"
-                  >roxanne(live from river plate stadium, buenos aires)</a
-                >
-                <i class="xi-play"></i>
-              </div>
-            </div>
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-            </div>
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-
-              <div class="friend-music">
-                <a href="#" class="music-ellipses">Roxanne</a>
-                <i class="xi-play"></i>
-              </div>
-            </div>
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-
-              <div class="friend-music">
-                <a href="#" class="music-ellipses">도랑</a>
-                <i class="xi-play"></i>
-              </div>
-            </div>
-
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-
-              <div class="friend-music">
-                <a href="#" class="music-ellipses">arabian nights</a>
-                <i class="xi-play"></i>
-              </div>
-            </div>
-
-            <div class="friends-column-contents">
-              <div class="content-left-column friend-column">
-                <img
-                  src="src/img/sideshow.png"
-                  class="friends-list__avatar avatar"
-                />
-                <div class="content-left-column-text">
-                  <span class="friends-list__name">사이드쇼</span>
-                  <span class="friend-status">타다락 타다락</span>
-                </div>
-              </div>
-
-              <div class="friend-music">
-                <a href="#" class="music-ellipses"
-                  >Smoke on the waaaaattttteeeeeerrrr</a
-                >
-                <i class="xi-play"></i>
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
           </div>
-        </main>
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
 
-        <nav class="nav-bar">
-          <ul class="nav-icons">
-            <li class="nav-icon">
-              <a href="index.html" class="nav__list-link home-btn"
-                ><i class="xi-user"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a href="chattings.html" class="nav__list-link chattings-btn"
-                ><i class="xi-speech-o"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a href="sharp.html" class="nav__list-link sharp-btn"
-                ><span>#</span></a
+            <div class="friend-music">
+              <a href="#" class="music-ellipses"
+                >roxanne(live from river plate stadium, buenos aires)</a
               >
-            </li>
-            <li class="nav-icon">
-              <a href="more.html" class="nav__list-link more-btn"
-                ><i class="xi-ellipsis-h"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+              <i class="xi-play"></i>
+            </div>
+          </div>
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+          </div>
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+
+            <div class="friend-music">
+              <a href="#" class="music-ellipses">Roxanne</a>
+              <i class="xi-play"></i>
+            </div>
+          </div>
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+
+            <div class="friend-music">
+              <a href="#" class="music-ellipses">도랑</a>
+              <i class="xi-play"></i>
+            </div>
+          </div>
+
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+
+            <div class="friend-music">
+              <a href="#" class="music-ellipses">arabian nights</a>
+              <i class="xi-play"></i>
+            </div>
+          </div>
+
+          <div class="friends-column-contents">
+            <div class="content-left-column friend-column">
+              <img
+                src="src/img/sideshow.png"
+                class="friends-list__avatar avatar"
+              />
+              <div class="content-left-column-text">
+                <span class="friends-list__name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+
+            <div class="friend-music">
+              <a href="#" class="music-ellipses"
+                >Smoke on the waaaaattttteeeeeerrrr</a
+              >
+              <i class="xi-play"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <nav class="nav-bar">
+        <ul class="nav-icons">
+          <li class="nav-icon">
+            <a href="index.html" class="nav__list-link home-btn"
+              ><i class="xi-user"></i
+            ></a>
+          </li>
+          <li class="nav-icon">
+            <a href="chattings.html" class="nav__list-link chattings-btn"
+              ><i class="xi-speech-o"></i
+            ></a>
+          </li>
+          <li class="nav-icon">
+            <a href="sharp.html" class="nav__list-link sharp-btn"
+              ><span>#</span></a
+            >
+          </li>
+          <li class="nav-icon">
+            <a href="more.html" class="nav__list-link more-btn"
+              ><i class="xi-ellipsis-h"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>

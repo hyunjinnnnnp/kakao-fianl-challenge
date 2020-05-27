@@ -1,11 +1,18 @@
 .status-bar > .chat__header {
   position: relative;
-
   background-color: rgba(171, 192, 209, 0.938);
+}
+.chat-body .status-bar {
+  display: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(171, 192, 209, 0);
 }
 .chat__header {
   z-index: 9329;
   position: absolute;
+  top: 0;
+  left: 0;
   font-size: 20px;
   font-weight: 600;
 
@@ -16,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  padding-top: 40px;
 }
 .chat__header-column i:nth-child(2) {
   margin-left: 100px;

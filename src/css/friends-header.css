@@ -1,14 +1,23 @@
 .friends-header {
+  display: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 60px;
+  height: 75px;
   background-color: white;
   font-size: 22px;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 40px 20px 20px 40px;
   box-sizing: border-box;
-  border-bottom: 1px solid #f8f8f8;
+  -webkit-box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
+
+  /*로딩화면 때문에 아이콘 가려짐. 지우지마*/
+  z-index: 9999;
 }
 .friends-header-icon {
   display: inline-block;

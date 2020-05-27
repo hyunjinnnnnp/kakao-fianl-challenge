@@ -16,6 +16,12 @@
 @import "chattings-add-friend.css";
 @import "new-chat.css";
 @import "code-scan.css";
+@import "download.css";
+
+/*
+.cacao-screen {
+  border: 1px solid red;
+}*/
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -26,10 +32,9 @@
 }
 a {
   text-decoration: none;
-  color: inherit;
 }
-
 .cacao-screen {
+  border: 1px solid tomato;
   position: relative;
   top: 0;
   left: 0;
@@ -37,35 +42,56 @@ a {
   height: 690px;
   color: #2c2c2c;
   background-color: white;
-  border: 1px solid salmon;
 }
-.status-bar {
-  z-index: 6000;
-}
-
-/*
-.loading-screen {
+.cacao-screen .loading-screen {
+  /*  z-index: 10000;*/
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  animation: loader 5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes loader {
-  0% {
-    background-image: url("src/img/loading.jpeg");
-    z-index: 9999;
-  }
-  50% {
-    z-index: 5000;
-  }
-  100% {
-    display: none;
-  }
+.kakao-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 395px;
+  height: 690px;
+  z-index: 999999;
+  object-fit: cover;
+  object-position: center;
 }
-*/
+
 .nav-icon {
   color: #2c2c2c;
+}
+
+/* 아이콘 클릭이 안되서
+.friends-header {
+  z-index: 2000;
+}
+ */
+
+.loading-screen {
+  animation: 10s loading-fade forwards;
+}
+@keyframes loading-fade {
+  0% {
+    background-image: url("../img/loading.png");
+    background-size: cover;
+  }
+  40% {
+    background-image: url("../img/loading.png");
+    background-size: cover;
+  }
+  99% {
+    display: none;
+  }
+  100% {
+    opacity: 0;
+  }
 }
