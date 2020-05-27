@@ -15,7 +15,6 @@
   bottom: 0;
 }
 .sharp__search-bar {
-  border: 1px solid red;
   z-index: 999;
   display: absolute;
   bottom: 0;
