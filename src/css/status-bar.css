@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: white;
+  /*background-color:white  << 로딩화면 겹치는 것때문에 없앰*/
   z-index: 999;
 }
 .status-bar-column-right {
