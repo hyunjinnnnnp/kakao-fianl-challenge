@@ -1,4 +1,4 @@
-.friends-header {
+.friends__header {
   display: absolute;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
   /*로딩화면 때문에 아이콘 가려짐. 지우지마*/
   z-index: 9999;
 }
-.friends-header-icon {
+.friends__header .header__icon {
   display: inline-block;
   margin-left: 20px;
 }
