@@ -11,18 +11,18 @@
       href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
   </head>
-  <body class="chat-body">
+  <body class="chat__body">
     <div class="cacao-screen">
       <header class="chat__header">
-        <div class="status-bar">
-          <div class="status-bar-column-left">
-            <i class="xi-signal-4"></i>
-            <span>kt</span>
-            <i class="xi-wifi"></i>
-          </div>
-          <div class="status-bar-column-right">
-            <span>오전 8:18</span>
-            <div class="status-bar-column">
+        <div class="status-bar__wrap">
+          <div class="status-bar__icons-column">
+            <div class="status-bar__column">
+              <i class="xi-signal-4"></i>
+              <span>kt</span>
+              <i class="xi-wifi"></i>
+            </div>
+
+            <div class="status-bar__icons">
               <i class="xi-lock-rotation"></i>
               <i class="xi-alarm"></i>
               <span>100%</span>
@@ -30,12 +30,20 @@
               <i class="xi-flash"></i>
             </div>
           </div>
+          <div class="status-bar__clock">
+            <span>오전 8:18</span>
+          </div>
         </div>
-        <a href="chattings.html"><i class="xi-angle-left"></i></a>
-        <div class="chat__header-column">
+
+        <div class="chat-with">
           <span>번즈</span>
-          <i class="xi-search"></i>
-          <i class="xi-bars"></i>
+        </div>
+        <div class="chat__header-column">
+          <a href="chattings.html"><i class="xi-angle-left"></i></a>
+          <ul class="icons-list">
+            <i class="xi-search"></i>
+            <i class="xi-bars"></i>
+          </ul>
         </div>
       </header>
 
@@ -43,7 +51,7 @@
         <div class="chat-wrap">
           <div class="chat-today">2050년 39월 03일</div>
           <div class="incoming-text">
-            <img src="src/img/burns.png" class="avatar chat-avatar" />
+            <img src="src/img/burns.png" class="avatar chat__avatar" />
             <div class="incoming-column">
               <span class="chat-name">번즈</span>
               <div class="chat-content">
@@ -105,7 +113,7 @@
             >
           </div>
           <div class="incoming-text">
-            <img src="src/img/burns.png" class="avatar chat-avatar" />
+            <img src="src/img/burns.png" class="avatar chat__avatar" />
             <div class="incoming-column">
               <span class="chat-name">번즈</span>
               <div class="chat-content">
@@ -115,7 +123,7 @@
             <span class="chat-timestamp">오후 25:93</span>
           </div>
           <div class="incoming-text">
-            <img src="src/img/burns.png" class="avatar chat-avatar" />
+            <img src="src/img/burns.png" class="avatar chat__avatar" />
             <div class="incoming-column">
               <span class="chat-name">번즈</span>
               <div class="chat-content">
@@ -127,7 +135,7 @@
 
           <div class="chat-today">2050년 349월 033일</div>
           <div class="incoming-text">
-            <img src="src/img/burns.png" class="avatar chat-avatar" />
+            <img src="src/img/burns.png" class="avatar chat__avatar" />
             <div class="incoming-column">
               <span class="chat-name">번즈</span>
               <div class="chat-content">
@@ -138,7 +146,7 @@
           </div>
 
           <div class="incoming-text">
-            <img src="src/img/burns.png" class="avatar chat-avatar" />
+            <img src="src/img/burns.png" class="avatar chat__avatar" />
             <div class="incoming-column">
               <span class="chat-name">번즈</span>
               <div class="chat-content">

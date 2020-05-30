@@ -1,39 +1,56 @@
-.status-bar > .chat__header {
-  position: relative;
-  background-color: rgba(171, 192, 209, 0.938);
-}
-.chat-body .status-bar {
+/*status-bar & header*/
+
+.chat-header .status-bar__icons-column {
   display: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(171, 192, 209, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.chat__header .status-bar__clock {
+  display: flex;
+  justify-content: center;
+}
+
 .chat__header {
   z-index: 9329;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
-
   background-color: rgba(171, 192, 209, 0.938);
-  height: 45px;
+  height: 85px;
   width: 100%;
+  padding: 5px;
+}
+
+.chat__header .chat-with {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  transform: translateY(110%);
+  font-size: 18px;
+  font-weight: 600;
+}
+.chat__header-column {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  padding-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 999999;
 }
-.chat__header-column i:nth-child(2) {
-  margin-left: 100px;
+.chat__header-column i {
+  margin: 0 5px;
+  z-index: 9999999;
 }
-.chat__header-column i:last-child {
-  margin-left: 20px;
-}
+/**/
 .chat__screen {
+  box-sizing: border-box;
   background-color: #abc0d1;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -47,11 +64,19 @@
 .chat__screen::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+.chat__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  object-fit: cover;
+}
 .chat__screen .chat-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px;
+  position: absolute;
+  width: 100%;
 }
 
 .chat-wrap .chat-name {
@@ -161,4 +186,28 @@
 
 .chat__typing i:last-child ::before::placeholder {
   display: block;
+}
+/* 에니메이션 */
+
+.incoming-text {
+  animation: 1s incoming-fade-in ease-in;
+}
+@keyframes incoming-fade-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(none);
+  }
+}
+.sent-text {
+  animation: 1s sent-fade-in ease-in;
+}
+@keyframes sent-fade-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(none);
+  }
 }

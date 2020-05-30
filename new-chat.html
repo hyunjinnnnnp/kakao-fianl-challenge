@@ -14,15 +14,16 @@
   <body>
     <div class="cacao-screen">
       <div class="new-chat-screen"></div>
+
       <div class="status-bar">
-        <div class="status-bar-column-left">
-          <i class="xi-signal-4"></i>
-          <span>kt</span>
-          <i class="xi-wifi"></i>
-        </div>
-        <div class="status-bar-column-right">
-          <span>오전 8:18</span>
-          <div class="status-bar-column">
+        <div class="status-bar__icons-column">
+          <div class="status-bar__column">
+            <i class="xi-signal-4"></i>
+            <span>kt</span>
+            <i class="xi-wifi"></i>
+          </div>
+
+          <div class="status-bar__icons">
             <i class="xi-lock-rotation"></i>
             <i class="xi-alarm"></i>
             <span>100%</span>
@@ -30,13 +31,16 @@
             <i class="xi-flash"></i>
           </div>
         </div>
+        <div class="status-bar__clock">
+          <span>오전 8:18</span>
+        </div>
       </div>
       <nav class="new-chat">
         <div class="new-chat__column">
           <a href="chattings.html"><i class="xi-close"></i></a>
           <span>새로운 채팅</span>
         </div>
-        <ul class="icons-list">
+        <ul class="new-cat__icons-list">
           <li class="new-chat__icon">
             <i class="xi-speech-o"></i>
             <span>일반계정</span>
@@ -66,83 +70,77 @@
           <li>모바일카트</li>
         </ul>
       </div>
-      <header class="friends-header">
-        <span>채팅</span>
-        <ul class="friends-header-column">
-          <li class="friends-header-icon">
-            <a href="chattings-add-friend.html"> <i class="xi-search"></i></a>
-          </li>
-          <li class="friends-header-icon">
-            <i class="xi-user-plus-o"></i>
-          </li>
-          <li class="friends-header-icon"><i class="xi-music"></i></li>
-          <li class="friends-header-icon"><i class="xi-cog"></i></li>
-        </ul>
-      </header>
 
-      <main class="chattings-list">
+      <main class="chattings__chats-list">
         <a href="chat.html">
           <div class="chattings__chat">
-            <div class="chats-column">
-              <img src="src/img/burns.png" class="avatar chats-avatar" />
-              <div class="chats-content">
-                <span class="chats-name">번즈</span>
-                <span class="chats-msg">새로운 메세지</span>
+            <div class="chat__column">
+              <img src="src/img/burns.png" class="avatar chat-avatar" />
+              <div class="chat__contents">
+                <span class="chat-name">번즈</span>
+                <span class="chat-msg">새로운 메세지</span>
               </div>
             </div>
-            <span class="chats-timestamp new-msg">66</span>
+            <span class="chat-timestamp new-msg">66</span>
           </div>
         </a>
 
         <div class="chattings__chat">
-          <div class="chats-column">
-            <img src="src/img/sideshow.png" class="avatar chats-avatar" />
-            <div class="chats-content">
-              <span class="chats-name">사이드쇼</span>
-              <span class="chats-msg">또로로...</span>
+          <div class="chat__column">
+            <img src="src/img/sideshow.png" class="avatar chat-avatar" />
+            <div class="chat__content">
+              <span class="chat-name">사이드쇼</span>
+              <span class="chat-msg">또로로...</span>
             </div>
           </div>
-          <span class="chats-timestamp">어제</span>
+          <span class="chat-timestamp">어제</span>
         </div>
-
         <div class="chattings__chat">
-          <div class="chats-column">
-            <img src="src/img/sideshow.png" class="avatar chats-avatar" />
-            <div class="chats-content">
-              <span class="chats-name">사이드쇼</span>
-              <span class="chats-msg">또로로...</span>
+          <div class="chat__column">
+            <img src="src/img/sideshow.png" class="avatar chat-avatar" />
+            <div class="chat__content">
+              <span class="chat-name">사이드쇼</span>
+              <span class="chat-msg">또로로...</span>
             </div>
           </div>
-          <span class="chats-timestamp">어제</span>
+          <span class="chat-timestamp">어제</span>
         </div>
-
         <div class="chattings__chat">
-          <div class="chats-column">
-            <img src="src/img/sideshow.png" class="avatar chats-avatar" />
-            <div class="chats-content">
-              <span class="chats-name">사이드쇼</span>
-              <span class="chats-msg">또로로...</span>
+          <div class="chat__column">
+            <img src="src/img/sideshow.png" class="avatar chat-avatar" />
+            <div class="chat__content">
+              <span class="chat-name">사이드쇼</span>
+              <span class="chat-msg">또로로...</span>
             </div>
           </div>
-          <span class="chats-timestamp">어제</span>
+          <span class="chat-timestamp">어제</span>
         </div>
-
         <div class="chattings__chat">
-          <div class="chats-column">
-            <img src="src/img/sideshow.png" class="avatar chats-avatar" />
-            <div class="chats-content">
-              <span class="chats-name">사이드쇼</span>
-              <span class="chats-msg">또로로...</span>
+          <div class="chat__column">
+            <img src="src/img/sideshow.png" class="avatar chat-avatar" />
+            <div class="chat__content">
+              <span class="chat-name">사이드쇼</span>
+              <span class="chat-msg">또로로...</span>
             </div>
           </div>
-          <span class="chats-timestamp">어제</span>
+          <span class="chat-timestamp">어제</span>
+        </div>
+        <div class="chattings__chat">
+          <div class="chat__column">
+            <img src="src/img/sideshow.png" class="avatar chat-avatar" />
+            <div class="chat__content">
+              <span class="chat-name">사이드쇼</span>
+              <span class="chat-msg">또로로...</span>
+            </div>
+          </div>
+          <span class="chat-timestamp">어제</span>
         </div>
       </main>
 
       <nav class="nav-bar">
-        <ul class="nav-icons">
+        <ul class="nav__icons-list">
           <li class="nav-icon">
-            <a href="index.html"><i class="xi-user"></i></a>
+            <a href="friends.html"><i class="xi-user"></i></a>
           </li>
           <li class="nav-icon">
             <a href="chattings.html"><i class="xi-speech-o"></i></a>

@@ -14,14 +14,14 @@
   <body>
     <div class="cacao-screen">
       <div class="status-bar">
-        <div class="status-bar-column-left">
-          <i class="xi-signal-4"></i>
-          <span>kt</span>
-          <i class="xi-wifi"></i>
-        </div>
-        <div class="status-bar-column-right">
-          <span>오전 8:18</span>
-          <div class="status-bar-column">
+        <div class="status-bar__icons-column">
+          <div class="status-bar__column">
+            <i class="xi-signal-4"></i>
+            <span>kt</span>
+            <i class="xi-wifi"></i>
+          </div>
+
+          <div class="status-bar__icons">
             <i class="xi-lock-rotation"></i>
             <i class="xi-alarm"></i>
             <span>100%</span>
@@ -29,54 +29,57 @@
             <i class="xi-flash"></i>
           </div>
         </div>
+        <div class="status-bar__clock">
+          <span>오전 8:18</span>
+        </div>
       </div>
 
-      <header class="more-header">
+      <header class="more__header">
         <span>더보기</span>
-        <ul class="more-header-column">
-          <li class="more-header-icon">
+        <ul class="more__icons-list">
+          <li class="more__header__icon">
             <a href="https://e.kakao.com/" target="_blank"
               ><i class="xi-search"></i
             ></a>
           </li>
-          <li class="more-header-icon">
+          <li class="more__header__icon">
             <a href="code-scan.html"><i class="xi-qr-code"></i></a>
           </li>
-          <li class="more-header-icon">
+          <li class="more__header__icon">
             <a href="music.html"><i class="xi-music"></i></a>
           </li>
-          <li class="more-header-icon">
+          <li class="more__header__icon">
             <a href="settings.html"><i class="xi-cog"></i></a>
           </li>
         </ul>
       </header>
 
-      <main class="more-main">
+      <main class="more__main">
         <div class="main__cacao-pay">
-          <div class="cacao-pay-profile">
-            <div class="profile-column">
+          <div class="cacao-pay__profile">
+            <div class="profile__column">
               <img
                 src="src/img/my-avatar.png"
                 class="avatar cacao-pay-avatar"
               />
-              <div class="profile-info">
+              <div class="profile__contents">
                 <span class="cacao-pay-name">심수니</span>
                 <span class="cacao-pay-email">simpsoon@gmail.com</span>
               </div>
             </div>
-            <div class="cacao-pay-btns">
+            <div class="cacao-pay__btns">
               <button>My</button>
               <button class="corn-btn">
                 <img src="src/img/cacao-pay.png" class="btn-img" /> 10
               </button>
             </div>
           </div>
-          <div class="cacao-pay-banking">
+          <div class="cacao-pay__banking">
             <button>
               <img src="src/img/cacao-pay2.png" class="cacao-pay-img2" />
               0원
             </button>
-            <div class="banking-column">
+            <div class="banking__column">
               <span>송금</span>
               <span>결제</span>
               <span>자산</span>
@@ -134,7 +137,7 @@
             </li>
           </ul>
 
-          <div class="cacao-account">
+          <div class="cacao__account">
             <div class="mail">
               <i class="xi-mail"></i><span>메일</span>
               <span class="make">만들기</span>
@@ -154,16 +157,12 @@
       </main>
 
       <nav class="nav-bar">
-        <ul class="nav-icons">
+        <ul class="nav__icons-list">
           <li class="nav-icon">
-            <a href="friends.html" class="nav__list-link home-btn"
-              ><i class="xi-user"></i
-            ></a>
+            <a href="friends.html"><i class="xi-user"></i></a>
           </li>
           <li class="nav-icon">
-            <a href="chattings.html" class="nav__list-link chattings-btn"
-              ><i class="xi-speech-o"></i
-            ></a>
+            <a href="chattings.html"><i class="xi-speech-o"></i></a>
           </li>
           <li class="nav-icon">
             <a href="sharp.html" class="nav__list-link sharp-btn"

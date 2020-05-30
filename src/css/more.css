@@ -1,4 +1,4 @@
-.more-header {
+.more__header {
   display: absolute;
   top: 0;
   left: 0;
@@ -16,15 +16,24 @@
   -moz-box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
 }
-
-.more-header-icon {
+.more__main .cacao-pay-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+.main__cacao-pay {
+  padding: 0px 10px;
+}
+.more__header__icon {
   display: inline-block;
   margin-left: 20px;
 }
-.more-main {
+.more__main {
   position: absolute;
   top: 80px;
   left: 0;
+  width: 100%;
   height: 555px;
   display: flex;
   flex-direction: column;
@@ -34,11 +43,11 @@
 
   box-sizing: border-box;
 }
-.more-main::-webkit-scrollbar {
+.more__main::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.cacao-pay-profile {
+.cacao-pay__profile {
   width: 100%;
   height: 90px;
   display: flex;
@@ -46,7 +55,7 @@
   align-items: center;
   padding: 15px;
 }
-.cacao-pay-profile .profile-info {
+.cacao-pay__profile .profile__contents {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
@@ -62,13 +71,13 @@
   opacity: 0.4;
   font-weight: 600;
 }
-.cacao-pay-profile .profile-column {
+.cacao-pay__profile .profile__column {
   display: flex;
 }
-.cacao-pay-profile .profile-column:nth-child(2) {
+.cacao-pay__profile .profile__column:nth-child(2) {
   display: block;
 }
-.cacao-pay-btns button {
+.cacao-pay__btns button {
   display: inline-block;
   background-color: white;
   border-radius: 20px;
@@ -82,7 +91,7 @@
   border-style: none;
   border: 1px solid rgb(231, 231, 231);
 }
-.cacao-pay-btns .btn-img {
+.cacao-pay__btns .btn-img {
   text-indent: 5px;
   float: left;
   width: 20px;
@@ -90,7 +99,7 @@
   object-fit: cover;
 }
 
-.cacao-pay-banking {
+.cacao-pay__banking {
   height: 50px;
   margin: 15px;
   background-color: #f3f3f3;
@@ -100,27 +109,27 @@
   justify-content: space-between;
   align-items: center;
 }
-.banking-column {
+.banking__column {
   font-size: 14px;
   opacity: 0.9;
   font-weight: 700;
 }
-.banking-column span:last-child:before,
-.banking-column span:nth-child(2):before {
+.banking__column span:last-child:before,
+.banking__column span:nth-child(2):before {
   content: "|";
   font-weight: 500;
   letter-spacing: 6px;
   opacity: 0.5;
 }
 
-.cacao-pay-banking .cacao-pay-img2 {
+.cacao-pay__banking .cacao-pay-img2 {
   width: 40px;
   height: 20px;
   object-fit: cover;
 
   float: left;
 }
-.cacao-pay-banking button {
+.cacao-pay__banking button {
   display: inline-block;
   background-color: white;
   border-radius: 20px;
@@ -156,7 +165,7 @@
   font-size: 30px;
   font-weight: 100;
 }
-.more-main .more__icon {
+.more__main .more__icon {
   text-align: center;
   width: 60px;
   height: 60px;
@@ -178,7 +187,7 @@
 
 }
 */
-.cacao-account {
+.cacao__account {
   height: 55px;
   margin: 15px;
   padding: 15px;
@@ -188,10 +197,10 @@
   border-top: 1px solid rgb(241, 241, 241);
   border-bottom: 1px solid rgb(241, 241, 241);
 }
-.cacao-account i {
+.cacao__account i {
   margin-right: 7px;
 }
-.cacao-account .make {
+.cacao__account .make {
   opacity: 0.8;
 }
 
