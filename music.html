@@ -13,15 +13,16 @@
   </head>
   <body>
     <div class="cacao-screen">
+  
       <div class="status-bar">
-        <div class="status-bar-column-left">
+       <div class="status-bar__icons-column">
+        <div class="status-bar__column">
           <i class="xi-signal-4"></i>
           <span>kt</span>
           <i class="xi-wifi"></i>
         </div>
-        <div class="status-bar-column-right">
-          <span>오전 8:18</span>
-          <div class="status-bar-column">
+
+          <div class="status-bar__icons">
             <i class="xi-lock-rotation"></i>
             <i class="xi-alarm"></i>
             <span>100%</span>
@@ -29,206 +30,196 @@
             <i class="xi-flash"></i>
           </div>
         </div>
+          <div class="status-bar__clock">
+            <span>오전 8:18</span>
+          </div>
+  
       </div>
-      <div class="music-screen"></div>
-      <header class="friends-header">
+
+
+      <header class="friends__header">
         <span>친구</span>
-        <ul class="friends-header-column">
-          <li class="friends-header-icon">
-            <a href="add-friends.html"><i class="xi-search"></i></a>
+        <ul class="header__icons-list">
+          <li class="header__icon">
+            <a href="https://e.kakao.com/" target="/blank"><i class="xi-search"></i></a>
           </li>
-          <li class="friends-header-icon">
+          <li class="header__icon">
             <a href="add-friends.html"><i class="xi-user-plus-o"></i></a>
           </li>
-          <li class="friends-header-icon"><i class="xi-music"></i></li>
-          <li class="friends-header-icon"><i class="xi-cog"></i></li>
+          <li class="header__icon">
+            <a href="music.html"><i class="xi-music"></i></a>
+          </li>
+          <li class="header__icon">
+            <a href="settings.html"><i class="xi-cog"></i></a>
+          </li>
         </ul>
       </header>
+<div class="music-screen"></div>
 
-      <div class="music-alert">
-        <p>
-          선택하신 곡은 카카오톡 플레이어에서 바로 재생할 수 있습니다. 지금 해당
-          곡을 톡에서 바로 감상 하시겠습니까?
-        </p>
-        <p>3G/LTE 환경에서는 데이터 요금이 발생할 수 있습니다.</p>
-        <div class="music-column">
-          <button onclick="goBack()">취소</button>
-        </div>
-      </div>
 
-      <main class="friends-list">
-        <div class="friends-column-contents my-profile">
-          <img
-            src="src/img/my-avatar.png"
-            class="frieds-list__my-avatar avatar"
-          />
-          <span class="friends-list__name friends-list__my-name"
-            >호머 심슨</span
-          >
+<div class="music-alert">
+  <p>
+    선택하신 곡은 카카오톡 플레이어에서 바로 재생할 수 있습니다. 지금 해당
+    곡을 톡에서 바로 감상 하시겠습니까?
+  </p>
+  <p>3G/LTE 환경에서는 데이터 요금이 발생할 수 있습니다.</p>
+  <div class="music-column">
+    <a href="friends.html"><span class="music-cancle">취소</span></a>
+  </div>
+</div>
+
+      <main class="friends__list">
+        <div class="friend__contents my-profile">
+          <img src="src/img/my-avatar.png" class="friend-avatar my-avatar" />
+          <span class="friend-name my-name">호머 심슨</span>
         </div>
-        <div class="friends-list__section section-favorite">
-          <div class="friends-list__column">
-            <div class="friends-column-title">
+        <div class="friends__list__section section-favorite">
+          <div class="section__column">
+            <div class="section__title">
               <span>즐겨찾기</span>
-              <i class="xi-angle-up-min"></i>
+              <div class="icon-animation">
+                <i class="xi-angle-up-min"></i>
+                <div class="hide">hide</div>
+              </div>
             </div>
             <a href="chat.html">
-              <div class="friends-column-contents">
-                <img
-                  src="src/img/burns.png"
-                  class="frieds-list__avatar avatar"
-                />
-                <span class="friends-list__name">번즈</span>
+              <div class="friend__contents">
+                <img src="src/img/burns.png" class="friend-avatar avatar" />
+                <span class="friend-name">번즈</span>
               </div>
             </a>
           </div>
         </div>
-        <div class="friends-list__section section-channel">
-          <div class="friends-list__column">
-            <div class="friends-column-title">
+        <div class="friends__list__section section-channel">
+          <div class="section__column">
+            <div class="section__title">
               <span>채널</span>
-              <i class="xi-angle-up-min"></i>
+              <div class="icon-animation">
+                <i class="xi-angle-up-min"></i>
+                <div class="hide">hide</div>
             </div>
           </div>
 
-          <div class="friends-column-contents">
-            <img
-              src="src/img/sideshow.png"
-              class="friends-list__avatar avatar"
-            />
-            <span class="friends-list__name">사이드쇼</span>
-          </div>
-        </div>
-        <div class="friends-list__section section-friends">
-          <div class="friends-column-title">
+          <a href="download.html">
+            <div class="friend__contents">
+              <img src="src/img/talk.png" class="friend-avatar avatar" />
+              <span class="friend-name">카카오톡</span>
+            </div>
+          </a>
+
+
+         
+        <div class="friends__list__section section-friends">
+          <div class="section__column">
+          <div class="section__title">
             <span>친구 78</span>
-            <i class="xi-angle-up-min"></i>
+            <div class="icon-animation">
+              <i class="xi-angle-up-min"></i>
+              <div class="hide">hide</div>
           </div>
-
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
+          </div>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
                 <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
-          </div>
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
-                <span class="friend-status">타다락 타다락</span>
-              </div>
-            </div>
-
-            <div class="friend-music">
-              <a href="#" class="music-ellipses"
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
                 >roxanne(live from river plate stadium, buenos aires)</a
               >
               <i class="xi-play"></i>
             </div>
           </div>
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
                 <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
-          </div>
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
-                <span class="friend-status">타다락 타다락</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
-                <span class="friend-status">타다락 타다락</span>
-              </div>
-            </div>
-
-            <div class="friend-music">
-              <a href="#" class="music-ellipses">Roxanne</a>
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >roxanne(live from river plate stadium, buenos aires)</a
+              >
               <i class="xi-play"></i>
             </div>
           </div>
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
                 <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
-
-            <div class="friend-music">
-              <a href="#" class="music-ellipses">도랑</a>
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >arabian night</a
+              >
               <i class="xi-play"></i>
             </div>
           </div>
-
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
                 <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
-
-            <div class="friend-music">
-              <a href="#" class="music-ellipses">arabian nights</a>
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >apocalypse</a
+              >
               <i class="xi-play"></i>
             </div>
           </div>
-
-          <div class="friends-column-contents">
-            <div class="content-left-column friend-column">
-              <img
-                src="src/img/sideshow.png"
-                class="friends-list__avatar avatar"
-              />
-              <div class="content-left-column-text">
-                <span class="friends-list__name">사이드쇼</span>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
                 <span class="friend-status">타다락 타다락</span>
               </div>
             </div>
-
-            <div class="friend-music">
-              <a href="#" class="music-ellipses"
-                >Smoke on the waaaaattttteeeeeerrrr</a
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >be mine</a
+              >
+              <i class="xi-play"></i>
+            </div>
+          </div>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >roxanne(live from river plate stadium, buenos aires)</a
+              >
+              <i class="xi-play"></i>
+            </div>
+          </div>
+          <div class="friend__contents">
+            <div class="friend__column">
+              <div class="friends-badge"></div>
+              <img src="src/img/sideshow.png" class="friend__avatar avatar" />
+              <div class="friend__detail">
+                <span class="friend-name">사이드쇼</span>
+                <span class="friend-status">타다락 타다락</span>
+              </div>
+            </div>
+            <div class="friend__music">
+              <a href="music_clicked.html" class="music-player"
+                >roxanne(live from river plate stadium, buenos aires)</a
               >
               <i class="xi-play"></i>
             </div>
@@ -237,35 +228,22 @@
       </main>
 
       <nav class="nav-bar">
-        <ul class="nav-icons">
+        <ul class="nav__icons-list">
           <li class="nav-icon">
-            <a href="friends.html" class="nav__list-link home-btn"
-              ><i class="xi-user"></i
-            ></a>
+            <a href="friends.html"><i class="xi-user"></i></a>
           </li>
           <li class="nav-icon">
-            <a href="chattings.html" class="nav__list-link chattings-btn"
-              ><i class="xi-speech-o"></i
-            ></a>
+            <a href="chattings.html"><i class="xi-speech-o"></i></a>
           </li>
           <li class="nav-icon">
-            <a href="sharp.html" class="nav__list-link sharp-btn"
-              ><span>#</span></a
-            >
+            <a href="sharp.html" class="nav__list-link sharp-btn"><span>#</span></a>
           </li>
           <li class="nav-icon">
-            <a href="more.html" class="nav__list-link more-btn"
-              ><i class="xi-ellipsis-h"></i
-            ></a>
+            <a href="more.html" class="nav__list-link more-btn"><i class="xi-ellipsis-h"></i></a>
           </li>
         </ul>
       </nav>
     </div>
-
-    <script>
-      function goBack() {
-        window.history.back();
-      }
-    </script>
+    <script src="https://kit.fontawesome.com/7e2a585147.js" crossorigin="anonymous"></script>
   </body>
 </html>

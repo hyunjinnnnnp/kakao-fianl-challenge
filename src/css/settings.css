@@ -1,4 +1,4 @@
-.settings-nav {
+.settings__nav {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -7,26 +7,25 @@
   background-color: rgba(255, 255, 255, 0);
   z-index: 99999;
 }
-.settings-nav .settings-column {
+.settings__nav .settings__url-list {
   height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   color: #42a5f5;
-  list-style: none;
   background-color: white;
   border-radius: 10px;
   margin: 10px;
 }
-.settings-column .setting-list:nth-child(2) {
+.settings__url-list .url-list:nth-child(2) {
   border-top: 1px solid rgb(221, 221, 221);
   border-bottom: 1px solid rgb(221, 221, 221);
   padding: 16px;
   width: 100%;
   text-align: center;
 }
-.settings-nav .setting-cancel {
+.settings__nav .setting-cancel {
   border-top: 1px solid rgb(221, 221, 221);
   border-bottom: 1px solid rgb(221, 221, 221);
   padding: 16px;
@@ -38,7 +37,7 @@
   box-sizing: border-box;
   font-weight: 700;
 }
-.settings-screen {
+.settings__screen {
   position: absolute;
   top: 0;
   left: 0;

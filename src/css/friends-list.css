@@ -5,7 +5,6 @@
   left: 0px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 17px;
   overflow: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -14,17 +13,21 @@
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.friends__list .my-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 30%;
-  border: 1px solid rgb(235, 235, 235);
-}
-.friends__list .avatar {
+.friends__list .friend__avatar,
+.friends__list .friend-avatar {
   width: 40px;
   height: 40px;
   border-radius: 30%;
   border: 1px solid rgb(235, 235, 235);
+  margin-right: 10px;
+}
+
+.friends__list .my-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  border: 1px solid rgb(231, 231, 231);
+  margin-bottom: 10px;
 }
 .friends__list .friend-name {
   font-weight: 500;
@@ -35,38 +38,115 @@
   font-weight: 700;
 }
 
-/*
-.section-friends .friend-music {
-  border: 1px solid #00eb1f;
-  border-radius: 15px;
-  padding: 7px;
-  color: rgb(160, 160, 160);
-  font-size: 12px;
+.friend__contents,
+.friends__list .my-profile {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* text-indent: 13px;?*/
+  padding: 5px 17px 5px 17px;
+}
+
+.section-friends .friend__contents {
+  display: flex;
+  justify-content: space-between;
+}
+.friends__list .section__title {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(231, 231, 231);
+  padding: 10px 17px 5px 17px;
+  margin: 5px 0px;
+  font-size: 13px;
   font-weight: 600;
-  max-width: 160px;
-  min-width: 50px;
-  max-height: 90px;
+}
+
+.section-friends .friend__column {
   display: flex;
 }
-.music-ellipses {
+.section-friends .friend-name {
   display: block;
+}
+.section-friends .friend-status {
+  text-indent: 10px;
+  font-size: 12px;
+  color: rgb(133, 133, 133);
+}
+.section-friends .friend__detail {
+  font-weight: 500;
+}
+/* 음악 컨텐츠 */
+
+.friend__contents .friend__music {
+  border: 1px solid #00eb1f;
+  border-radius: 15px;
+  padding: 5px;
+  color: rgb(133, 133, 133);
+  font-size: 12px;
+  font-weight: 500;
+}
+.friends__list .music-player {
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  /*word-break: break-all;
+  word-break: break-all;
   text-overflow: ellipsis;
   max-width: 140px;
-
   text-transform: capitalize;
+  max-width: 120px;
 }
-.friend-music i {
+.friends__list .friend__music i {
   color: #00eb1f;
-  margin-left: 5px;
+  margin-left: 3px;
 }
-*/
-/* 호버하면 배경화면 바뀐다 */
-.friends-column-contents:hover {
+/* 뉴 뱃지 */
+
+.friends__list .friend__column:before {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  top: 0px;
+  left: 10px;
+  font-weight: 900;
+  content: "\f111";
+  color: rgb(245, 66, 35);
+  font-size: 1px;
+}
+/* 호버,액티브하면 배경화면 바뀐다 */
+.friends__list .friend__contents:hover {
   background-color: rgb(243, 243, 243);
 }
-.my-profile:hover {
+
+.friends__list .friend__contents:active {
+  background-color: rgb(206, 206, 206);
+}
+.friends__list .my-profile:hover {
   background-color: white;
+}
+
+/* ^ 아이콘 누르면 프렌즈 숨김 창 */
+.friends__list .icon-animation {
+  position: relative;
+  cursor: pointer;
+}
+.friends__list .hide {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  padding: 5px;
+  border-radius: 30%;
+  border-top-right-radius: 0px;
+  opacity: 0;
+  transform: translate(-100%);
+}
+.friends__list .icon-animation:hover .hide {
+  animation: 0.1s icon-pop forwards;
+}
+@keyframes icon-pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

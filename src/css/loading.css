@@ -18,6 +18,7 @@
 }
 
 .loading-screen .status-bar {
+  position: absolute;
   z-index: 10001;
   animation: 0.1s status-loading forwards;
   animation-delay: 3s;

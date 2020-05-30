@@ -12,9 +12,6 @@
   align-items: center;
   padding: 40px 20px 20px 40px;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 6px 11px -14px rgba(0, 0, 0, 0.5);
 
   /*로딩화면 때문에 아이콘 가려짐. 지우지마*/
   z-index: 9999;

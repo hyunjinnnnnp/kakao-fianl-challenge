@@ -9,7 +9,7 @@
   padding: 15px 45px;
   z-index: 9999;
 }
-.nav-icons {
+.nav__icons-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,4 +17,5 @@
 }
 .nav-icon {
   cursor: pointer;
+  color: teal;
 }

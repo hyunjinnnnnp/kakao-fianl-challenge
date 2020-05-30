@@ -4,15 +4,16 @@
   height: 20px;
   font-size: 12px;
   font-weight: 600;
+  padding: 5px;
+  z-index: 999;
+}
+.status-bar__icons-column {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
-  /*background-color:white  << 로딩화면 겹치는 것때문에 없앰*/
-  z-index: 999;
 }
-.status-bar-column-right {
+.status-bar__clock {
   display: flex;
-  width: 225px;
-  justify-content: space-between;
+  justify-content: center;
+  transform: translateY(-100%);
 }
