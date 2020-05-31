@@ -32,13 +32,11 @@ body {
 * {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
-  text-decoration-style: none;
 
   /*  color: #2c2c2c;*/
 }
 a {
   color: inherit;
-  text-decoration: none;
 }
 .cacao-screen {
   position: relative;
