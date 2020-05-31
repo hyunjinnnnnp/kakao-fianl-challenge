@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="cacao-screen">
+    <div class="download-screen">
       <header class="app__header">
         <div class="app__status-bar">
           <div class="status-bar__icons-column">
@@ -34,8 +34,9 @@
           </div>
 
           <div class="header__column">
+            <a href="friends.html">
             <i class="xi-angle-left"></i>
-            <span class="header__search">검색</span>
+           <span class="header__search">검색</span></a>
           </div>
         </div>
       </header>
@@ -82,23 +83,29 @@
     
 
     <main class="app__content">
-      <div class="app-imgs">
-        <img src="src/img/game.png" class="game-img" width="400" height="200" />
+        <div class="image-container">
+        <img src="src/img/game.png" class="game-img"/>
         <img
           src="src/img/game2.png"
-          class="game-img2"
-          width="400"
-          height="200"
-        />
-      </div>
-      <div class="app-details">
-        <span>끝나지 않는 즐거움!</span>
+          class="game-img2"/></div>
+          <div class="image-container__column">
+          
+          <span><i class="xi-apps"></i>iPad용 앱 제공</span>
+          <i class="xi-angle-down-min"></i>
 
-        <p>
+        </div>
+  
+      <div class="app-details">
+
+        <h2>끝나지 않는 즐거움!</h2>
+        <input id="overview-cb" type="checkbox" class="read-more-state">
+
+        <p class="read-more-wrap">
+  
           THIS GAME IS LIFE-RUININGLY FUN! From the writers of The Simpsons,
           comes the city building game that lets you create your own living,
-          breathing Springfield! When Homer accidently causes a meltdown that
-          wipes out Springfield, it’s up to you to clean up his mess… we mean,
+          breathing Springfield!      </p>
+        <span class="read-more-target"> wipes out Springfield, it’s up to you to clean up his mess… we mean,
           help him rebuild it! Collect Your Favorite Characters Help reunite
           Homer with his loved ones - Marge, Lisa, Maggie (and even sometimes
           Bart) – as well as his not so loved ones, like Ned Flanders.
@@ -111,8 +118,10 @@
           instead! Make Apu work ridiculously long shifts at the Kwik-E-Mart,
           have Moe smuggle illegal animals, or make Homer toil poolside all day…
           that last one might not be so bad.
-        </p>
-      </div>
+          </span>
+  
+      <label for="overview-cb" class="read-more-trigger"></label>
+</div>
     </main>
 
     <nav class="app__nav">

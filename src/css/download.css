@@ -1,3 +1,15 @@
+.download-screen {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 395px;
+  height: 630px;
+  color: #2c2c2c;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
 .app__header {
   position: relative;
   top: 0;
@@ -15,7 +27,6 @@
   background-position: 100%;
   background-repeat: no-repeat;
   display: inline-block;
-  overflow: auto;
 }
 .app__header .app__status-bar {
   color: rgba(255, 255, 255, 0.658);
@@ -63,7 +74,7 @@
   width: 395px;
   padding: 20px;
   display: flex;
-  border: 1px solid salmon;
+  justify-content: space-around;
 }
 
 .game__detail .game-small-img {
@@ -80,21 +91,23 @@
   font-size: 16px;
   font-weight: 700;
   align-self: flex-start;
-  margin: 0 10px 0 17px;
+  margin: 10px 10px 0 20px;
 
-  line-height: 2em;
+  line-height: 1em;
 }
 .game__detail .title-column span:nth-child(3) {
   font-size: 12px;
   font-weight: 600;
   color: rgb(151, 151, 151);
+  margin-top: 10px;
 }
 .game__detail .charge-column {
-  width: 210px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   font-size: 14px;
+  margin-top: 10px;
 }
 .charge-column .charge-btn {
   width: 30px;
@@ -117,15 +130,15 @@
   font-size: 10px;
   font-weight: 600;
   color: rgb(151, 151, 151);
-  align-self: flex-start;
   margin-left: 5px;
+  margin-right: 20px;
 }
 .charge-column i {
   background-color: rgb(75, 87, 250);
   color: white;
   font-size: 20px;
   font-weight: 700;
-  padding: 0px 5px;
+  padding: 5px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -138,12 +151,12 @@
   position: absolute;
   top: 460px;
   left: 0;
+  box-sizing: border-box;
+  width: calc(100% - 100px);
   display: flex;
-  width: 90%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 17px;
-  box-sizing: border-box;
+  margin: 0 50px;
 }
 .app__ratings-column .ratings {
   display: flex;
@@ -158,16 +171,113 @@
 /*메인*/
 .app__content {
   display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 4295px;
+  top: 530px;
   left: 0;
   width: 100%;
-  height: 240px;
-  border: 3px solid blue;
+}
+.app__content .image-container {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
-.game-img,
-.game-img2 {
-  transform: translateY(100%);
-  opacity: 0;
+.app__content .game-img,
+.app__content .game-img2 {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.app__content .image-container__column {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+  padding: 15px;
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+/*앱 디테일 '더보기' 클릭했을 때 보여주는 문서*/
+.app-details {
+  padding: 0px 17px 20px 17px;
+  text-align: justify;
+}
+.app-details h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.read-more-wrap {
+  font-size: 12px;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+}
+
+/*-----*/
+.read-more-wrap {
+  margin-bottom: 20px;
+}
+.app-details .read-more-state {
+  display: none;
+}
+.read-more-target {
+  display: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.read-more-state:checked ~ .read-more-target {
+  display: block;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: "Read more";
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less";
+}
+.read-more-state:checked ~ .read-more-wrap {
+  margin-bottom: 0;
+}
+.read-more-trigger {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4b58fa;
+  margin-top: 20px;
+}
+/* nav bar */
+
+.app__nav {
+  position: fixed;
+  top: 630px;
+  left: 0;
+  width: 395px;
+  height: 60px;
+  background-color: white;
+  border-top: 1px solid rgb(224, 224, 224);
+}
+.app__nav .icons-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(150, 150, 150);
+  height: 100%;
+}
+.icons-list .app-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icons-list .app-icon i {
+  font-size: 25px;
+}
+.icons-list .app-icon span {
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 5px;
 }
