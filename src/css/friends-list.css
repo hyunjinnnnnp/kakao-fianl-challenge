@@ -126,7 +126,7 @@
   background-color: white;
 }
 
-/* ^ 아이콘 누르면 프렌즈 숨김 창 */
+/* ^ 아이콘 호버 하면 텍스트 */
 .friends__list .icon-animation {
   position: relative;
   cursor: pointer;
@@ -151,4 +151,21 @@
   to {
     opacity: 1;
   }
+}
+/* ^ 아이콘 누르면 창 닫힘 */
+
+.hiding-cb {
+  display: none;
+}
+.showing-target {
+  display: block;
+}
+.showing-trigger:checked ~ .showing-target {
+  display: none;
+}
+.hiding-cb ~ .showing-trigger:before {
+  content: "🙌";
+}
+.hiding-cb:checked ~ .showing-trigger:before {
+  content: "🥶";
 }
