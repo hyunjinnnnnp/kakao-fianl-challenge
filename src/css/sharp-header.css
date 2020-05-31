@@ -1,4 +1,4 @@
-.sharp-header {
+.sharp__header {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,11 +21,11 @@
   background-color: white;
   z-index: 15;
 }
-.sharp-header::-webkit-scrollbar {
+.sharp__header::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-.sharp-header::before {
+.sharp__header::before {
   content: "<<-slide->> ";
   color: rgb(255, 208, 0);
   /*
@@ -33,7 +33,7 @@
   content: "\f292";
   font-size: 900;*/
 }
-.sharp-header .sharp-header__opacity {
+.sharp__header .sharp__header-opacity {
   position: absolute;
   left: 0;
   width: 690px;
@@ -59,12 +59,12 @@
   content: " slide-icon > ";
 }
 */
-.sharp-header .header-column {
+.sharp__header .header__item {
   display: inline-block;
   margin-right: 14px;
   list-style: none;
 }
-.sharp-header .header-column:nth-child(2) {
+.sharp__header .header__item:nth-child(2) {
   color: #2c2c2c;
   border-bottom: 2px solid #2c2c2c;
 }

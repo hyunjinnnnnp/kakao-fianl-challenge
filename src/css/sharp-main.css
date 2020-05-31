@@ -1,55 +1,70 @@
-.sharp-main {
+.sharp__main {
   position: relative;
-  top: 0;
+  top: 70px;
   left: 0;
   width: 100%;
-  height: 690px;
+  height: 560px;
+  border: 1px solid #f0f0f0;
   background-color: white;
-  overflow: hidden;
-}
-.sharp-main img {
-  display: none;
-}
-.sharp-main .nav-bar {
-  position: absolute;
-  bottom: 0;
-}
-.sharp__search-bar {
-  z-index: 999;
-  display: absolute;
-  bottom: 0;
-  left: 150px;
-  width: 100%;
-  height: 0px;
-  text-align: center;
-  background-color: white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  -webkit-box-shadow: 0px -200px 14px 34px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 0px -200px 14px 34px rgba(0, 0, 0, 0.62);
-  box-shadow: 0px -200px 14px 34px rgba(0, 0, 0, 0.62);
-  transform: translateY(100%), scaleY(0.1);
-}
-.sharp__search-bar input {
-  outline-style: none;
-  border: none;
-  border: 2px solid rgb(255, 230, 0);
-  border-radius: 10px;
-  width: 90%;
-  margin: 20px 0;
-}
-.sharp__search-bar input::placeholder {
-  text-align: center;
+  overflow: scroll;
 }
 
-.sharp__search-bar .search-recommend {
+.sharp__main .news-head {
+  padding: 0 17px;
   font-size: 14px;
-  font-weight: 700px;
-  background-color: rgb(187, 187, 187);
-  opacity: 0.5;
-  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px solid #f0f0f0;
+}
+.sharp__main .content__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sharp__main .wash-hand-img {
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/corona.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 뉴스 제목 리스트 */
+
+.sharp__main .news-content {
+  display: flex;
+  flex-direction: column;
+}
+.sharp__main .news-content span {
+  padding: 10px 17px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
   display: inline-block;
-  border-radius: 15px;
-  padding: 2px 4px;
-  margin: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sharp__main .commercial-contents {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.sharp__main .commercial-contents img {
+  border-radius: 10px;
+  width: 175px;
+  height: 100px;
+  object-fit: cover;
+}
+.sharp__main .commercial-detail {
+  width: 100%;
+  padding: 10px 17px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

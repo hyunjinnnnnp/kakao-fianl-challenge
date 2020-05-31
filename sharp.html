@@ -13,93 +13,112 @@
   </head>
   <body>
     <div class="cacao-screen">
-        <div class="status-bar">
-          <div class="status-bar-column-left">
+      <div class="status-bar">
+        <div class="status-bar__icons-column">
+          <div class="status-bar__column">
             <i class="xi-signal-4"></i>
             <span>kt</span>
             <i class="xi-wifi"></i>
           </div>
-          <div class="status-bar-column-right">
-            <span>오전 8:18</span>
-            <div class="status-bar-column">
-              <i class="xi-lock-rotation"></i>
-              <i class="xi-alarm"></i>
-              <span>100%</span>
-              <i class="xi-battery-o"></i>
-              <i class="xi-flash"></i>
-            </div>
+
+          <div class="status-bar__icons">
+            <i class="xi-lock-rotation"></i>
+            <i class="xi-alarm"></i>
+            <span>100%</span>
+            <i class="xi-battery-o"></i>
+            <i class="xi-flash"></i>
           </div>
         </div>
-        <header class="sharp-header">
-          <div class="sharp-header__opacity"></div>
-            <ul class="header-items-list">
-            <li class="header-column">코로나 19</li>
-            <li class="header-column">뉴스</li>
-            <li class="header-column">FUN</li>
-            <li class="header-column">쇼핑</li>
-            <li class="header-column">연예</li>
-            <li class="header-column">뮤직</li>
-            <li class="header-column">스포츠</li>
-            <li class="header-column">공연</li>
-          </ul>
-        </header>
+        <div class="status-bar__clock">
+          <span>오전 8:18</span>
+        </div>
+      </div>
 
-        <main class="sharp-main">
-          <div class="main-section">
-            <div class="main-column">
-              <span class="mask">"마스크 안 쓰면 버스, 택시 못타요"</span>
-              <span class="main-red">긴급재난지원금 | 생활 속 거리두기</span>
-            </div>
-            <i class="xi-hand-paper"></i>
+      <header class="sharp__header">
+        <div class="sharp__header-opacity"></div>
+        <ul class="header__items-list">
+          <li class="header__item">코로나 19</li>
+          <li class="header__item">뉴스</li>
+          <li class="header__item">FUN</li>
+          <li class="header__item">쇼핑</li>
+          <li class="header__item">연예</li>
+          <li class="header__item">뮤직</li>
+          <li class="header__item">스포츠</li>
+          <li class="header__item">공연</li>
+        </ul>
+      </header>
+
+      <main class="sharp__main">
+        <div class="main__contents news-head">
+          <div class="content__column">
+            <span class="mask">"마스크 안 쓰면 버스, 택시 못타요"</span>
+            <span class="main-red">긴급재난지원금 | 생활 속 거리두기</span>
           </div>
+          <div class="wash-hand-img"></div>
+        </div>
+        <div class="main__contents news-content">
+          <span
+            >신종 코로나바이러스 감염증(코로나19) 일일 신규 확진자 수가 닷새만에
+            20명 후반대로 떨어졌다. 중앙방역대책본부는 31일 0시 기준 코로나19
+            신규 확진자가 27명 늘어</span
+          >
+          <span>
+            경기도 성남시는 가천대학교 학생 2명이 코로나19 확진 판정을 받음에
+            따라 이들과 접촉한 가천대 학생과... 오전 코로나19에 확진된 뒤
+            밀접접촉자로 분류돼 검사를 받은
+          </span>
+          <span
+            >丁총리 "코로나 안심할 때 아니다…콜센터⋅IT업종⋅육가공
+            불시점검"</span
+          >
+          <span>[단독]코로나 이후 국가신용등급 상향은 '0건'</span>
+          <span
+            >중국 우한을 넘어 전 세계 곳곳으로 코로나19가 퍼진 3월 이후로
+            국가신용등급이 상향된 국</span
+          >
+        </div>
 
+        <div class="commercial-contents">
+          <img src="src/img/wash.jpg" alt="wash" class="corona2" />
+          <img src="src/img/simpsons.jpg" alt="wash2" class="corona3" />
+        </div>
+        <span class="commercial-detail">
+          코로나19 어제 27명 신규확진-닷새만에 20명대로…지역 산발감염(종합)
+        </span>
 
-          <div class="main-section">
-            <div class="main-column">
-              <img src="src/img/wash.jpg" class="main-img" />
-              <span class="section-detail">손을 깨끗이</span>
-            </div>
-            <div class="main-column>
-              <img src="src/img/simpsons.jpg" alt="simpsons">
-              <span class="section-detal">뽀짝뽀짝</span>
-            </div>
-          </div>
-          <div class="main-section">
-            <div class="relative-weather">
-                <div class="main-column">
-                  <span class="degree">17℃</span>
-                  <span>어제보다 2℃ 높아요
-                  <i class="xi-my-location"></i></span>
-                </div>
+        <div class="main__contents news-content">
+          <span
+            >신종 코로나바이러스 감염증(코로나19) 일일 신규 확진자 수가 닷새만에
+            20명 후반대로 떨어졌다. 중앙방역대책본부는 31일 0시 기준 코로나19
+            신규 확진자가 27명 늘어</span
+          >
+          <span>
+            경기도 성남시는 가천대학교 학생 2명이 코로나19 확진 판정을 받음에
+            따라 이들과 접촉한 가천대 학생과... 오전 코로나19에 확진된 뒤
+            밀접접촉자로 분류돼 검사를 받은
+          </span>
+          <span
+            >丁총리 "코로나 안심할 때 아니다…콜센터⋅IT업종⋅육가공
+            불시점검"</span
+          >
+          <span>[단독]코로나 이후 국가신용등급 상향은 '0건'</span>
+          <span
+            >중국 우한을 넘어 전 세계 곳곳으로 코로나19가 퍼진 3월 이후로
+            국가신용등급이 상향된 국</span
+          >
+        </div>
 
-                <div class="weather-absolute">
-                  <i class="xi-umbrella-o"></i><span>비올 확률 낮음</span>
-                  <i class="xi-sun-o"></i><span>매우 더움</span>
-                </div>
-                <div class="weather-absolute-2">
-                 <i class="xi-snooze"></i><span>낮잠 자기 좋을 날씨</span>
-                 <i class="xi-cloud-o"></i><span>바람바람바람</span>
-                </div>
-             </div>
-          </div>
-          <div class="main-commercial">
-            <img src="src/img/commercial2.png" class="commercial2">
-          </div>
-       
-
-          <div class="sharp__search-bar">
-            <input type="text" placeholder="검색어를 입력해주세요" />
-        
-            <ul class="search__keywords">
+        <div class="sharp__search-bar">
+          <input type="text" placeholder="검색어를 입력해주세요" />
+          <ul class="search__keywords">
             <li class="search-recommend">#생활 속 거리두기</li>
             <li class="search-recommend">#현아 필라테스</li>
             <li class="search-recommend">#산다라박 합류</li>
             <li class="search-recommend">#지코 재능기부</li>
             <li class="search-recommend">#진 피아노 연주</li>
             <li class="search-recommend">#백현 선주문</li>
-            </ul>
-       </div>
-
+          </ul>
+        </div>
       </main>
       <nav class="nav-bar">
         <ul class="nav__icons-list">
@@ -110,13 +129,21 @@
             <a href="chattings.html"><i class="xi-speech-o"></i></a>
           </li>
           <li class="nav-icon">
-            <a href="sharp.html" class="nav__list-link sharp-btn"><span>#</span></a>
+            <a href="sharp.html" class="nav__list-link sharp-btn"
+              ><span>#</span></a
+            >
           </li>
           <li class="nav-icon">
-            <a href="more.html" class="nav__list-link more-btn"><i class="xi-ellipsis-h"></i></a>
+            <a href="more.html" class="nav__list-link more-btn"
+              ><i class="xi-ellipsis-h"></i
+            ></a>
           </li>
         </ul>
       </nav>
-</div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7e2a585147.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
