@@ -7,7 +7,7 @@
   background-color: #f9f9fb;
   border: 1px solid #e6e6e6;
   padding: 15px 45px;
-  z-index: 9999;
+  /*z-index: 9999; 로딩화면보다 올라옴*/
 }
 .nav__icons-list {
   display: flex;

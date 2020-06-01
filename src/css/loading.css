@@ -1,5 +1,5 @@
 .loading-screen {
-  z-index: 10000;
+  z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,30 +17,27 @@
   object-position: center;
 }
 
-.loading-screen .status-bar {
-  position: absolute;
-  z-index: 10001;
-  animation: 0.1s status-loading forwards;
-  animation-delay: 3s;
-  opacity: 0;
+.loading__status-bar {
+  visibility: hidden;
+  animation: 0.1s status-showing 2s forwards;
 }
-@keyframes status-loading {
-  0% {
-    opacity: 0;
+@keyframes status-showing {
+  from {
+    visibility: hidden;
   }
-  100% {
-    opacity: 1;
+  to {
+    visibility: visible;
   }
 }
 
 .loading-screen {
-  animation: 0.1s loading-fade 6s forwards;
+  animation: 0.1s loading-fade 3s forwards;
 }
 @keyframes loading-fade {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   100% {
-    transform: translateY(-100%);
+    visibility: hidden;
   }
 }
