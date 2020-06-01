@@ -8,7 +8,7 @@
 
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
   </head>
   <body>
@@ -107,9 +107,15 @@
             국가신용등급이 상향된 국</span
           >
         </div>
+      </main>
 
+      <nav class="sharp__nav-bar">
         <div class="sharp__search-bar">
-          <input type="text" placeholder="검색어를 입력해주세요" />
+          <input
+            type="text"
+            placeholder="검색어를 입력해주세요"
+            class="click-input"
+          />
           <ul class="search__keywords">
             <li class="search-recommend">#생활 속 거리두기</li>
             <li class="search-recommend">#현아 필라테스</li>
@@ -118,29 +124,44 @@
             <li class="search-recommend">#진 피아노 연주</li>
             <li class="search-recommend">#백현 선주문</li>
           </ul>
+
+          <div class="growed-search-bar">
+            <input type="text" placeholder="" />
+            <div class="growed-search-bar__contents">
+              <div class="content__column">
+                <i class="xi-clock-o"></i>
+                <div>도비는 자유</div>
+              </div>
+              <div class="content__column">
+                <div>12.22.</div>
+                <i class="xi-close"></i>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <nav class="nav-bar">
-        <ul class="nav__icons-list">
-          <li class="nav-icon">
-            <a href="friends.html"><i class="xi-user"></i></a>
-          </li>
-          <li class="nav-icon">
-            <a href="chattings.html"><i class="xi-speech-o"></i></a>
-          </li>
-          <li class="nav-icon">
-            <a href="sharp.html" class="nav__list-link sharp-btn"
-              ><span>#</span></a
-            >
-          </li>
-          <li class="nav-icon">
-            <a href="more.html" class="nav__list-link more-btn"
-              ><i class="xi-ellipsis-h"></i
-            ></a>
-          </li>
-        </ul>
+
+        <div class="nav-bar">
+          <ul class="nav__icons-list">
+            <li class="nav-icon">
+              <a href="friends.html"><i class="xi-user"></i></a>
+            </li>
+            <li class="nav-icon">
+              <a href="chattings.html"><i class="xi-speech-o"></i></a>
+            </li>
+            <li class="nav-icon">
+              <a href="sharp.html" class="nav__list-link sharp-btn"
+                ><span>#</span></a
+              >
+            </li>
+            <li class="nav-icon">
+              <a href="more.html" class="nav__list-link more-btn"
+                ><i class="xi-ellipsis-h"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
+   
     <script
       src="https://kit.fontawesome.com/7e2a585147.js"
       crossorigin="anonymous"

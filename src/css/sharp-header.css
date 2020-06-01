@@ -19,7 +19,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   background-color: white;
-  z-index: 15;
+  /*z-index: 15;    그로우 서치바랑 부딪힘 */
 }
 .sharp__header::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/

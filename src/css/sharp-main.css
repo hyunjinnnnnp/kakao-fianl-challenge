@@ -1,12 +1,12 @@
 .sharp__main {
   position: relative;
-  top: 70px;
+  top: 60px;
   left: 0;
   width: 100%;
-  height: 560px;
+  height: 630px;
   border: 1px solid #f0f0f0;
   background-color: white;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .sharp__main .news-head {
