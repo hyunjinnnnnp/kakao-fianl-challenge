@@ -1,8 +1,9 @@
 .more__header {
-  display: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 395px;
   height: 75px;
   background-color: white;
   font-size: 22px;

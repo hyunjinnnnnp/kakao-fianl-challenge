@@ -18,7 +18,7 @@
   align-items: center;
 
   padding: 30px;
-  z-index: 999;
+  z-index: 1001;
 }
 .music-alert .music-cancle {
   background-color: white;
@@ -36,5 +36,5 @@
   background-color: rgba(49, 49, 58, 0.884);
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 1000;
 }
