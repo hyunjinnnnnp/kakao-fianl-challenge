@@ -1,0 +1,123 @@
+.chat-drawer__bg-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 690px;
+  background-color: rgba(49, 49, 58, 0.801);
+  z-index: 9998;
+}
+
+.chat-drawer__screen {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 330px;
+  height: 670px;
+  background-color: white;
+  z-index: 9999;
+  padding: 0 15px;
+}
+
+.chat-drawer__screen .drawer__share {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.chat-drawer__screen .share-title {
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.share-contents {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(141, 141, 141);
+}
+.share-contents i:first-child {
+  margin-right: 10px;
+}
+.share-contents i:nth-child(2) {
+  font-size: 16px;
+}
+.chat-drawer__screen .drawer__chapters {
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+.drawer-vote .chapter-content {
+  font-size: 14px;
+  font-weight: 500;
+  width: 50%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  color: rgb(141, 141, 141);
+}
+.drawer-vote {
+  display: flex;
+}
+.drawer__invite {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.drawer__invite .chat-with {
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.drawer__invite .invite__people {
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  color: rgb(81, 156, 255);
+}
+.drawer__invite .invite__people i {
+  background-color: whitesmoke;
+  padding: 5px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.invite__content .avatar-list img {
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.chat-drawer__settings {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 330px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 17px;
+  font-size: 20px;
+  color: rgb(163, 163, 163);
+}
+.chat-drawer__settings .settings-column i {
+  margin-left: 15px;
+}

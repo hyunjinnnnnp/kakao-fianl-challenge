@@ -1,31 +1,33 @@
 /*status-bar & header*/
-
-.chat-header .status-bar__icons-column {
-  display: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.chat__status-bar {
+  position: fixed;
+  width: 395px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  z-index: 9999;
 }
-.chat__header .status-bar__clock {
-  display: flex;
-  justify-content: center;
-}
-
 .chat__header {
   z-index: 9329;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   font-size: 14px;
   font-weight: 600;
   background-color: rgba(171, 192, 209, 0.938);
   height: 85px;
-  width: 100%;
-  padding: 5px;
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 17px;
 }
-
+.chat__header .icons-list i {
+  margin-left: 10px;
+}
 .chat__header .chat-with {
   font-size: 22px;
   font-weight: 600;
@@ -34,17 +36,7 @@
   transform: translateY(110%);
   font-size: 18px;
   font-weight: 600;
-}
-.chat__header-column {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 600;
-  z-index: 999999;
-}
-.chat__header-column i {
-  margin: 0 5px;
-  z-index: 9999999;
+  z-index: 9999;
 }
 /**/
 .chat__screen {
@@ -108,7 +100,7 @@
 }
 .chat-wrap .chat-content {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 10px 15px;
   border-radius: 15px;
 }
@@ -145,9 +137,10 @@
 }
 
 .chat__typing {
+  background-color: white;
+  position: fixed;
   height: 45px;
-  width: 100%;
-  position: absolute;
+  width: 395px;
   left: 0;
   bottom: 0;
   display: flex;

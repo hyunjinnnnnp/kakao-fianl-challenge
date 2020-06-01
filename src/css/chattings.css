@@ -1,8 +1,9 @@
 .chattings__header {
-  display: absolute;
+  position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 395px;
   height: 75px;
   background-color: white;
   font-size: 22px;
@@ -27,7 +28,7 @@
   top: 80px;
   left: 0;
   width: 100%;
-  height: calc(100%-80px);
+  height: 555px;
   display: flex;
   flex-direction: column;
   overflow: scroll;

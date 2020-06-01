@@ -8,10 +8,10 @@
 
     <link
       rel="stylesheet"
-      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
   </head>
-  <body class="chat__body">
+  <body>
     <div class="cacao-screen">
       <div class="chat__status-bar">
         <div class="status-bar__icons-column">
@@ -35,13 +35,10 @@
       </div>
       <header class="chat__header">
         <a href="chattings.html"><i class="xi-angle-left"></i></a>
-        <span class="chat__with">번즈</span>
-
+        <span>번즈</span>
         <ul class="icons-list">
           <i class="xi-search"></i>
-          <a href="chat__drawer.html">
-            <i class="xi-bars"></i>
-          </a>
+          <i class="xi-bars"></i>
         </ul>
       </header>
 
@@ -160,6 +157,74 @@
         <i class="xi-plus-square-o"></i>
         <input type="text" class="type-text" placeholder="" />
         <i class="xi-emoticon-cool-o"></i>
+      </div>
+
+      <div class="chat-drawer__bg-opacity"></div>
+      <div class="chat-drawer__screen">
+        <div class="drawer__share">
+          <div class="share-title">채팅방 서랍</div>
+          <div class="share-contents">
+            <span> <i class="xi-image-o"></i>사진, 동영상 </span>
+            <i class="xi-angle-right-min"></i>
+          </div>
+          <div class="share-contents">
+            <span> <i class="xi-folder-o"></i>파일 </span>
+            <i class="xi-angle-right-min"></i>
+          </div>
+          <div class="share-contents">
+            <span> <i class="xi-link"></i>링크 </span>
+            <i class="xi-angle-right-min"></i>
+          </div>
+        </div>
+        <div class="drawer__chapters">
+          <div class="chapter-title">톡캘린더</div>
+          <i class="xi-angle-right-min"></i>
+        </div>
+        <div class="drawer__chapters">
+          <div class="chapter-title">뮤직</div>
+          <i class="xi-angle-right-min"></i>
+        </div>
+        <div class="drawer__chapters">
+          <div class="chapter-title">톡게시판</div>
+          <i class="xi-angle-right-min"></i>
+        </div>
+        <div class="drawer__chaperts drawer-vote">
+          <div class="chapter-content"><i class="xi-error-o"></i>공지</div>
+          <div class="chapter-content"><i class="xi-thumbs-up"></i>투표</div>
+        </div>
+        <div class="drawer__invite">
+          <div class="chat-with">대화상대</div>
+
+          <div class="invite__content">
+            <div class="invite__people">
+              <i class="xi-plus"></i>
+              <span>대화상대 초대</span>
+            </div>
+
+            <div class="avatar-list">
+              <img
+                src="src/img/my-avatar.png"
+                alt="my-avatar"
+                class="chat__avatar"
+              />
+              <span>심슨</span>
+            </div>
+
+            <div class="avatar-list">
+              <img src="src/img/burns.png" alt="burns" class="chat__avatar" />
+              <span>번즈</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-drawer__settings">
+          <a href="chat.html"><i class="xi-log-out"></i></a>
+
+          <div class="settings-column">
+            <i class="xi-bell"></i>
+            <i class="xi-star"></i>
+            <i class="xi-cog"></i>
+          </div>
+        </div>
       </div>
     </div>
   </body>
