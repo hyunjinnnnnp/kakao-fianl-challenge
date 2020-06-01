@@ -8,7 +8,7 @@
 
 .sharp__search-bar {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0px;
   width: 100%;
   height: 120px;
@@ -21,14 +21,17 @@
   box-shadow: 0px -7px 14px 1px rgba(0, 0, 0, 0.19);
   z-index: -9;
 
-  animation: 1s search-bar-grow forwards;
+  animation: 3s search-bar-grow forwards;
 }
 @keyframes search-bar-grow {
-  from {
+  0% {
     transform: translateY(60px);
   }
-  to {
+  50% {
     transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(60px);
   }
 }
 .sharp__search-bar input {
@@ -90,7 +93,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 550px;
+  height: 580px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -155,9 +158,11 @@
 }
 @keyframes click_grow {
   from {
-    visibility: visible;
+    visibility: none;
+    height: 580px;
   }
   to {
     visibility: visible;
+    height: 620px;
   }
 }
