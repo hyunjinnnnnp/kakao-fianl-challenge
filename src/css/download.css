@@ -205,6 +205,7 @@
 .app-details {
   padding: 0px 17px 20px 17px;
   text-align: justify;
+  margin-bottom: 10vh;
 }
 .app-details h2 {
   font-size: 14px;
@@ -253,7 +254,7 @@
 
 .app__nav {
   position: fixed;
-  top: 630px;
+  bottom: 0;
   left: 0;
   width: 395px;
   height: 60px;

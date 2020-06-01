@@ -1,5 +1,5 @@
 .friends__header {
-  display: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 395px;
@@ -14,7 +14,7 @@
   box-sizing: border-box;
 
   /*로딩화면 때문에 아이콘 가려짐. 지우지마*/
-  z-index: 9999;
+  z-index: 999;
 }
 .friends__header .header__icon {
   display: inline-block;

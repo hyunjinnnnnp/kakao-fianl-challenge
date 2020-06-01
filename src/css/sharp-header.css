@@ -1,8 +1,8 @@
 .sharp__header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 395px;
   height: 45px;
   font-size: 22px;
   font-weight: 700px;
