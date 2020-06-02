@@ -1,25 +1,29 @@
+.sharp__status-bar{
+  background-color: white;
+  padding-bottom:50px;
+}
 .sharp__header {
   position: fixed;
-  z-index: 9;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 395px;
-  height: 45px;
+  background-color: white;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  height: 30px;
   font-size: 22px;
   font-weight: 700px;
-  padding: 15px;
   padding-bottom: 0;
-  color: rgb(107, 107, 107);
-  display: flex;
-
-  border-bottom: 1px solid rgb(226, 226, 226);
+  /*color: rgb(107, 107, 107);*/
   white-space: nowrap;
-  overflow-x: scroll;
   word-break: keep-all;
-  margin-top: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 30px;
+  
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  background-color: white;
+
   /*z-index: 15;    그로우 서치바랑 부딪힘 */
 }
 .sharp__header::-webkit-scrollbar {
@@ -28,44 +32,30 @@
 
 .sharp__header::before {
   content: "<<-slide->> ";
-  color: rgb(255, 208, 0);
-  /*
-  font-family: "Font Awesome 5 Free";
-  content: "\f292";
-  font-size: 900;*/
+  color: rgb(157, 255, 65);
+  float:left;
 }
-.sharp__header .sharp__header-opacity {
-  position: absolute;
-  left: 0;
-  width: 690px;
-  height: 40px;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgb(255, 255, 255) 100%
-  );
-}
-/*  doesnt work. why?
-.sharp-header:before {
-  display: inline-block;
-  font-family: "Font Awesome 5 Free";
-  content: "\f0a8";
-  font-weight: 900;
-}
-
-.sharp-header:after {
-  content: " < slide-icon";
-}
-.sharp-header:before {
-  content: " slide-icon > ";
-}
-*/
 .sharp__header .header__item {
-  display: inline-block;
-  margin-right: 14px;
+  margin-left: 14px;
   list-style: none;
 }
+/*
 .sharp__header .header__item:nth-child(2) {
   color: #2c2c2c;
   border-bottom: 2px solid #2c2c2c;
+}
+*/
+
+.sharp__header .header__items-list{
+  display:block;
+  height:45px;
+  width:700px;
+  background: linear-gradient(to right, black, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.1);
+
+}
+.sharp__header .header__item{
+  float: left;
 }

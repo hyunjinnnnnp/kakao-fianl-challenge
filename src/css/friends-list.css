@@ -30,7 +30,7 @@
   margin-bottom: 10px;
 }
 .friends__list .friend-name {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -85,6 +85,8 @@
   color: rgb(133, 133, 133);
   font-size: 12px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 .friends__list .music-player {
   display: inline-block;
