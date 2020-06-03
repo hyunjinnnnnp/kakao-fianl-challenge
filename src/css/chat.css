@@ -31,12 +31,15 @@
 .chat__header .chat-with {
   font-size: 22px;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  transform: translateY(110%);
   font-size: 18px;
   font-weight: 600;
   z-index: 9999;
+  display: inline-block;
+  text-align: center;
+}
+.chat__header .back-btn {
+  display: inline-block;
+  width: 60px; /*번즈 센터에 놓기 위해 :: 태그 두개만들기 싫었음*/
 }
 /**/
 .chat__screen {
