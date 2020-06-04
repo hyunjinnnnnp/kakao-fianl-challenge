@@ -12,16 +12,16 @@
     />
   </head>
   <body>
-    <div class="download-screen">
+    <div class="download-screen scrollArea">
       <header class="app__header">
-        <div class="app__status-bar">
-          <div class="status-bar__icons-column">
+        <div class="app__status-bar appHeader">
+          <div class="status-bar__icons-column fontColorBlack">
             <div class="status-bar__column">
               <i class="xi-signal-4"></i>
               <span>kt</span>
               <i class="xi-wifi"></i>
             </div>
-            <div class="status-bar__icons">
+            <div class="status-bar__icons fontColorBlack">
               <i class="xi-lock-rotation"></i>
               <i class="xi-alarm"></i>
               <span>100%</span>
@@ -29,14 +29,11 @@
               <i class="xi-flash"></i>
             </div>
           </div>
-          <div class="status-bar__clock">
-            <span>오전 8:18</span>
-          </div>
+          <div class="status-bar__clock fontColorBlack">오전 8:18</div>
 
           <div class="header__column">
             <a href="friends.html">
-            <i class="xi-angle-left"></i>
-           <span class="header__search">검색</span></a>
+            <i class="xi-angle-left appHeaderIcon"></i></a>
           </div>
         </div>
       </header>
@@ -147,5 +144,6 @@
     <div class="smallScreen">
       <div class="span">Please make your screen smaller! 👻</div>
     </div>
+    <script src=src/js/downloadHeader.js></script>
   </body>
 </html>
