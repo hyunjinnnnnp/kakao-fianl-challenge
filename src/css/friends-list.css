@@ -171,3 +171,11 @@
 .hiding-cb:checked ~ .showing-trigger:before {
   content: "🥶";
 }
+/*js ^ 아이콘 제어하기위한 버튼 */
+.friends__list button {
+  border-style: none;
+  outline-style: none;
+}
+.wrapperFriendsContents {
+  transition: display 1s, opacity 0.5s ease-out;
+}
