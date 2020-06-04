@@ -285,6 +285,7 @@ body {
 .test {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid rgb(224, 224, 224);
+  transition: 3s background-color ease-in-out;
   /*didnt work. js 파일에 적용시켜
   color: black;
   text-shadow: none;

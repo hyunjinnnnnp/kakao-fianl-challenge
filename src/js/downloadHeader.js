@@ -6,10 +6,11 @@ const FONT_POSITION = document.querySelector(".header__column");
 const FONT_COLOR_BLACK = document.querySelector(".fontColorBlack");
 const FONT_COLOR_CLOCK = document.querySelector(".status-bar__clock");
 const APP_ICON = document.querySelector(".appHeaderIcon");
+
 SCROLL_AREA.addEventListener("scroll", myFunction);
 
 function myFunction() {
-  if (SCROLL_AREA.scrollTop > 232) {
+  if (SCROLL_AREA.scrollTop > 195) {
     HEADER_AREA.classList.add(TEST_CLASS);
     HEADER_AREA.style.height = "60px";
     FONT_POSITION.style.top = "5px";
