@@ -6,7 +6,7 @@
     <link href="src/css/styles.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
     <title>CaCao | Nomad Challenge</title>
 
     
@@ -68,29 +68,34 @@
             <div class="section__title">
               <span>즐겨찾기</span>
               <div class="icon-animation">
-                <i class="xi-angle-up-min"></i>
-                <div class="hide">hide</div>
+                <button onclick="btnControlFavorite()">
+                  <i class="xi-angle-up-min"></i>
+                </button>
+                <div class="hide hideFav">hide</div>
               </div>
             </div>
             <a href="chat.html">
-              <div class="friend__contents">
+              <div class="friend__contents favoriteContents">
                 <img src="src/img/burns.png" class="friend-avatar avatar" />
                 <span class="friend-name">번즈</span>
               </div>
             </a>
           </div>
         </div>
-        <div class="friends__list__section section-channel">
-          <div class="section__column">
-            <div class="section__title">
-              <span>채널</span>
+ 
+        <div class="section__column">
+          <div class="section__title">
+            <span>채널</span>
+            <div class="icon-animation">
+              <button onclick="btnControlChannel()"> 
                 <i class="xi-angle-up-min"></i>
-                <div class="hide">hide</div>
-            </div>
+                </button>
+              <div class="hide textChannel">hide</div>
           </div>
-
+        </div>
+        
           <a href="download.html">
-            <div class="friend__contents">
+            <div class="friend__contents channelContents">
               <img src="src/img/game-bg.png" class="friend-avatar avatar" />
               <span class="friend-name">스프링필드 다운로드</span>
             </div>
@@ -103,10 +108,13 @@
           <div class="section__title">
             <span>친구 78</span>
             <div class="icon-animation">
+              <button onclick="btnControlFriends()">
               <i class="xi-angle-up-min"></i>
-              <div class="hide">hide</div>
+            </button>
+              <div class="hide textFriends">hide</div>
           </div>
           </div>
+          <div class="wrapperFriendsContents">
           <div class="friend__contents">
             <div class="friend__column">
               <div class="new-badge"></div>
@@ -214,6 +222,7 @@
               <i class="xi-play"></i>
             </div>
           </div>
+          </div>
         </div>
       </main>
 
@@ -237,5 +246,7 @@
     <div class="smallScreen">
       <div class="span">Please make your screen smaller! 👻</div>
     </div>
+
+    <script src="src/js/index.js"></script>
     </body>
 </html>
