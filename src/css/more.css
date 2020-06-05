@@ -206,16 +206,45 @@
 }
 
 .commercial {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .commercial-img {
+  position: absolute;
   width: 360px;
-  height: 140;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
 }
-.commercial input {
-  display: inline-block;
+.commercial-img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 360px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  transform: translateX(8px);
+  animation: 0.1s fade-commercial;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+@keyframes fade-commercial {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
